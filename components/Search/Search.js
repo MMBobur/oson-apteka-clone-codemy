@@ -139,11 +139,8 @@ const styles = StyleSheet.create({
   search_item: {
     flexDirection: "column",
     alignItems: "flex-start",
-    // height: 200,
-    // justifyContent: "space-around",
     borderBottomWidth: 1,
     borderBottomColor: "#e6e4eb",
-    // marginLeft: 16,
     paddingLeft: 16,
     paddingBottom: 10,
   },
@@ -159,8 +156,6 @@ const styles = StyleSheet.create({
     marginTop: -25,
   },
   searched_drug_price: {
-    // justifyContent: "flex-end",
-    // marginBottom: 10,
     fontSize: 12,
     color: "#3873D3",
   },
