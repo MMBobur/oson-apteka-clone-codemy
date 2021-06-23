@@ -6,6 +6,7 @@ import {
   FlatList,
   TouchableOpacity,
   TouchableHighlight,
+  StatusBar,
 } from "react-native";
 import { SearchBar } from "react-native-elements";
 import { ScrollView } from "react-native-gesture-handler";
@@ -49,8 +50,8 @@ export default function Search({ navigation }) {
           placeholderTextColor="#91AAB8"
           clearIcon={true}
           searchIcon={() => (
-            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-              <EvilIcons name="chevron-left" size={30} color="#91AAB8" />
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <EvilIcons name="chevron-left" size={32} color="#91AAB8" />
             </TouchableOpacity>
           )}
           containerStyle={{
@@ -135,6 +136,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#3872D3",
+    paddingTop: 25,
+    paddingBottom: 10,
   },
   search_item: {
     flexDirection: "column",

@@ -1,57 +1,391 @@
-import * as React from "react";
-import { Button, View, Text, StyleSheet, StatusBar } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import React, { useEffect } from "react";
+import { Linking, StyleSheet } from "react-native";
+import {
+  createDrawerNavigator,
+  DrawerItemList,
+  DrawerContentScrollView,
+} from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
-import SearchScreen from "./components/Search/Search";
-import HomeHeaderComponent from "./components/Home/HomeHeaderComponent";
-import CardItems from "./components/Home/CardItems";
-import { SafeAreaView } from "react-native-safe-area-context";
 
-function HomeScreen({ navigation }) {
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ backgroundColor: "white" }}>
-        <StatusBar
-          backgroundColor="#3872D3"
-          barStyle="dark-content"
-          hidden={false}
-        />
-        <HomeHeaderComponent navigation={navigation} />
-        <CardItems />
-      </View>
-    </SafeAreaView>
-  );
-}
+import { HomeScreen } from "./screens";
+import { NavigationContainer } from "@react-navigation/native";
+import {
+  Entypo,
+  AntDesign,
+  Ionicons,
+  SimpleLineIcons,
+  Feather,
+  MaterialIcons,
+} from "@expo/vector-icons";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-function SearchDrugsScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, justifyContent: "center" }}>
-      <SearchScreen navigation={navigation} />
-    </View>
-  );
-}
+import AboutScreen from "./components/Pages/AboutScreen";
+import LanguageScreen from "./components/Pages/LanguageScreen";
+import PromoActsiyaScreen from "./components/Pages/PromoActsiya";
+import OmmaviyOffertaScreen from "./components/Pages/OmmaviyOffertaScreen";
+import HistoryOfSearchScreen from "./components/Pages/HistoryOfSearchScreen";
+import { Text } from "react-native";
 
+const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
+
+function AboutStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleStyle: {
+          display: "flex",
+          alignSelf: "center",
+          paddingRight: 50,
+        },
+        headerStyle: {
+          elevation: 1,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Иловa ҳақида"
+        component={AboutScreen}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <Entypo
+                style={{ paddingLeft: 10 }}
+                name="chevron-small-left"
+                size={30}
+                color="black"
+              />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function LanguageStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleStyle: {
+          display: "flex",
+          alignSelf: "center",
+          paddingRight: 50,
+        },
+        headerStyle: {
+          elevation: 1,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Тилни танлаш"
+        component={LanguageScreen}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <Entypo
+                style={{ paddingLeft: 10 }}
+                name="chevron-small-left"
+                size={30}
+                color="black"
+              />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function PromoActsiyaStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleStyle: {
+          display: "flex",
+          alignSelf: "center",
+          paddingRight: 50,
+        },
+        headerStyle: {
+          elevation: 1,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Промо акция тугади"
+        component={PromoActsiyaScreen}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <Entypo
+                style={{ paddingLeft: 10 }}
+                name="chevron-small-left"
+                size={30}
+                color="black"
+              />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function OffertaStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleStyle: {
+          display: "flex",
+          alignSelf: "center",
+          paddingRight: 50,
+        },
+        headerStyle: {
+          elevation: 1,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Оммавий офферта"
+        component={OmmaviyOffertaScreen}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <Entypo
+                style={{ paddingLeft: 10 }}
+                name="chevron-small-left"
+                size={30}
+                color="black"
+              />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function HistoryStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleStyle: {
+          display: "flex",
+          alignSelf: "center",
+          paddingRight: 50,
+        },
+        headerStyle: {
+          elevation: 1,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Қидирувлар тарихи"
+        component={HistoryOfSearchScreen}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
+              <Entypo
+                style={{ paddingLeft: 10 }}
+                name="chevron-small-left"
+                size={30}
+                color="black"
+              />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+const _pressCall = () => {
+  const url = "tel://+998 71 203 6766";
+  Linking.openURL(url);
+};
+
+function ContactStack({ navigation }) {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="COntact"
+        component={_pressCall}
+        navigation={navigation}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+              <Entypo name="chevron-small-left" size={30} color="black" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+/////////DrawerText
+function CustomDrawerContent(props) {
+  return (
+    <DrawerContentScrollView {...props}>
+      <DrawerItemList {...props} />
+      <Text style={styles.bottomTextDrawerScreen}>"Oson Apteka" LLC</Text>
+    </DrawerContentScrollView>
+  );
+}
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen
-          name="Home"
+      <Drawer.Navigator
+        drawerContent={(props) => <CustomDrawerContent {...props} />}
+        drawerContentOptions={{
+          labelStyle: {
+            color: "black",
+            fontSize: 15,
+            // paddingLeft: -10,
+            marginLeft: -10,
+          },
+          itemStyle: {
+            borderColor: "#98A5A9",
+            borderBottomWidth: 0.3,
+            paddingTop: 3,
+            paddingBottom: 6,
+          },
+        }}
+        drawerPosition="right"
+      >
+        {/* <CustomDrawerContent {...props} /> */}
+        <Drawer.Screen
+          options={{
+            drawerIcon: () => (
+              <AntDesign
+                style={styles.iconDrawer}
+                name="home"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
           component={HomeScreen}
-          options={{ headerShown: false }}
+          name="HomeScreen"
         />
-        <Stack.Screen
-          name="Search"
-          component={SearchDrugsScreen}
-          options={{ headerShown: false }}
+        <Drawer.Screen
+          options={{
+            swipeEnabled: false,
+            drawerIcon: () => (
+              <Ionicons
+                style={styles.iconDrawer}
+                name="briefcase-outline"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={AboutStack}
+          name="Илова ҳақида"
         />
-      </Stack.Navigator>
+        <Drawer.Screen
+          options={{
+            swipeEnabled: false,
+
+            drawerIcon: () => (
+              <Ionicons
+                style={styles.iconDrawer}
+                name="ios-language-outline"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={LanguageStack}
+          name="Тил"
+        />
+        <Drawer.Screen
+          options={{
+            swipeEnabled: false,
+
+            drawerIcon: () => (
+              <SimpleLineIcons
+                style={styles.iconDrawer}
+                name="trophy"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={PromoActsiyaStack}
+          name="Промо-акция"
+        />
+        <Drawer.Screen
+          options={{
+            swipeEnabled: false,
+
+            drawerIcon: () => (
+              <AntDesign
+                style={styles.iconDrawer}
+                name="filetext1"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={OffertaStack}
+          name="Оммавий офферта"
+        />
+        <Drawer.Screen
+          options={{
+            swipeEnabled: false,
+
+            drawerIcon: () => (
+              <MaterialIcons
+                style={styles.iconDrawer}
+                name="history"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={HistoryStack}
+          name="Қидирувлар тарихи"
+        />
+        <Drawer.Screen
+          options={{
+            drawerIcon: () => (
+              <Feather
+                style={styles.iconDrawer}
+                name="phone"
+                size={22}
+                color="#98A5A9"
+              />
+            ),
+          }}
+          component={ContactStack}
+          name="+998 71 203 6766"
+        />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }
 
 export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  iconDrawer: {
+    paddingLeft: 10,
+  },
+  bottomTextDrawerScreen: {
+    display: "flex",
+    alignSelf: "center",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    paddingTop: 130,
+    fontSize: 16,
+    color: "#98A5A9",
+    fontWeight: "500",
+  },
+});

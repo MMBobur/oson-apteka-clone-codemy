@@ -1,0 +1,50 @@
+{
+    "sourceFile": "components/Pages/AboutScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1624361753029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624362561763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,31 @@\n import React from \"react\";\r\n-import { View, Text } from \"react-native\";\r\n+import { View, Text, Button } from \"react-native\";\r\n \r\n+import { createStackNavigator } from \"@react-navigation/stack\";\r\n+\r\n+const AboutStack = createStackNavigator();\r\n+\r\n+function AboutPage({ navigation }) {\r\n+  return (\r\n+    <AboutStack.Navigator>\r\n+      <AboutStack.Screen\r\n+        name=\"About\"\r\n+        component={AboutScreen}\r\n+        navigation={navigation}\r\n+      />\r\n+    </AboutStack.Navigator>\r\n+  );\r\n+}\r\n+\r\n const AboutScreen = () => {\r\n   return (\r\n     <View>\r\n       <Text>About Screen</Text>\r\n+      <Button\r\n+        onPress={() => navigation.navigate(\"home\")}\r\n+        title=\"Go to notifications\"\r\n+      />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624362576786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,21 +2,21 @@\n import { View, Text, Button } from \"react-native\";\r\n \r\n import { createStackNavigator } from \"@react-navigation/stack\";\r\n \r\n-const AboutStack = createStackNavigator();\r\n+// const AboutStack = createStackNavigator();\r\n \r\n-function AboutPage({ navigation }) {\r\n-  return (\r\n-    <AboutStack.Navigator>\r\n-      <AboutStack.Screen\r\n-        name=\"About\"\r\n-        component={AboutScreen}\r\n-        navigation={navigation}\r\n-      />\r\n-    </AboutStack.Navigator>\r\n-  );\r\n-}\r\n+// function AboutPage({ navigation }) {\r\n+//   return (\r\n+//     <AboutStack.Navigator>\r\n+//       <AboutStack.Screen\r\n+//         name=\"About\"\r\n+//         component={AboutScreen}\r\n+//         navigation={navigation}\r\n+//       />\r\n+//     </AboutStack.Navigator>\r\n+//   );\r\n+// }\r\n \r\n const AboutScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1624362599439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n //     </AboutStack.Navigator>\r\n //   );\r\n // }\r\n \r\n-const AboutScreen = () => {\r\n+const AboutScreen = ({ navigation }) => {\r\n   return (\r\n     <View>\r\n       <Text>About Screen</Text>\r\n       <Button\r\n"
+                },
+                {
+                    "date": 1624362607593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import { View, Text, Button } from \"react-native\";\r\n \r\n-import { createStackNavigator } from \"@react-navigation/stack\";\r\n+// import { createStackNavigator } from \"@react-navigation/stack\";\r\n \r\n // const AboutStack = createStackNavigator();\r\n \r\n // function AboutPage({ navigation }) {\r\n"
+                },
+                {
+                    "date": 1624362697829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   return (\r\n     <View>\r\n       <Text>About Screen</Text>\r\n       <Button\r\n-        onPress={() => navigation.navigate(\"home\")}\r\n+        onPress={() => navigation.navigate(\"Home\")}\r\n         title=\"Go to notifications\"\r\n       />\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624362712436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,7 @@\n import React from \"react\";\r\n import { View, Text, Button } from \"react-native\";\r\n \r\n-// import { createStackNavigator } from \"@react-navigation/stack\";\r\n-\r\n-// const AboutStack = createStackNavigator();\r\n-\r\n-// function AboutPage({ navigation }) {\r\n-//   return (\r\n-//     <AboutStack.Navigator>\r\n-//       <AboutStack.Screen\r\n-//         name=\"About\"\r\n-//         component={AboutScreen}\r\n-//         navigation={navigation}\r\n-//       />\r\n-//     </AboutStack.Navigator>\r\n-//   );\r\n-// }\r\n-\r\n const AboutScreen = ({ navigation }) => {\r\n   return (\r\n     <View>\r\n       <Text>About Screen</Text>\r\n"
+                },
+                {
+                    "date": 1624362758260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { View, Text, Button } from \"react-native\";\r\n \r\n const AboutScreen = ({ navigation }) => {\r\n   return (\r\n-    <View>\r\n+    <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n       <Text>About Screen</Text>\r\n       <Button\r\n         onPress={() => navigation.navigate(\"Home\")}\r\n         title=\"Go to notifications\"\r\n"
+                },
+                {
+                    "date": 1624363085083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,8 @@\n const AboutScreen = ({ navigation }) => {\r\n   return (\r\n     <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n       <Text>About Screen</Text>\r\n-      <Button\r\n-        onPress={() => navigation.navigate(\"Home\")}\r\n-        title=\"Go to notifications\"\r\n-      />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                }
+            ],
+            "date": 1624361753029,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { View, Text } from \"react-native\";\r\n\r\nconst AboutScreen = () => {\r\n  return (\r\n    <View>\r\n      <Text>About Screen</Text>\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default AboutScreen;\r\n"
+        }
+    ]
+}
