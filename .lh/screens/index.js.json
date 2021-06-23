@@ -1,0 +1,26 @@
+{
+    "sourceFile": "screens/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1624359823342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624360396919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n import Screen from \"./Screen\";\r\n \r\n export const HomeScreen = ({ navigation }) => (\r\n-  <Screen navigation={navigation} name=\"HomePage\" />\r\n+  <Screen navigation={navigation} name=\"HomePageaaaaaaa\" />\r\n );\r\n"
+                },
+                {
+                    "date": 1624446814789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n import Screen from \"./Screen\";\r\n \r\n export const HomeScreen = ({ navigation }) => (\r\n-  <Screen navigation={navigation} name=\"HomePageaaaaaaa\" />\r\n+  <Screen navigation={navigation} name=\"HomePage\" />\r\n );\r\n"
+                }
+            ],
+            "date": 1624359823342,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport Screen from \"./Screen\";\r\n\r\nexport const HomeScreen = ({ navigation }) => (\r\n  <Screen navigation={navigation} name=\"HomePage\" />\r\n);\r\n"
+        }
+    ]
+}

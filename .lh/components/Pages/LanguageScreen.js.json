@@ -1,0 +1,30 @@
+{
+    "sourceFile": "components/Pages/LanguageScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1624363406186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624363595108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,29 @@\n import React from \"react\";\r\n import { View, Text, Button } from \"react-native\";\r\n+import { createStackNavigator } from \"@react-navigation/stack\";\r\n \r\n+const LanStack = createStackNavigator();\r\n+\r\n+function LanguageStack({ navigation }) {\r\n+  return (\r\n+    <LanStack.Navigator>\r\n+      <LanStack.Screen\r\n+        name=\"Til\"\r\n+        component={LanguageScreen}\r\n+        navigation={navigation}\r\n+        options={{\r\n+          headerLeft: () => (\r\n+            <TouchableOpacity onPress={() => navigation.navigate(\"Home\")}>\r\n+              <Entypo name=\"chevron-small-left\" size={30} color=\"black\" />\r\n+            </TouchableOpacity>\r\n+          ),\r\n+        }}\r\n+      />\r\n+    </LanStack.Navigator>\r\n+  );\r\n+}\r\n+\r\n function LanguageScreen({ navigation }) {\r\n   return (\r\n     <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n       <Text>About Screen</Text>\r\n"
+                },
+                {
+                    "date": 1624363848330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,7 @@\n import React from \"react\";\r\n import { View, Text, Button } from \"react-native\";\r\n-import { createStackNavigator } from \"@react-navigation/stack\";\r\n \r\n-const LanStack = createStackNavigator();\r\n-\r\n-function LanguageStack({ navigation }) {\r\n-  return (\r\n-    <LanStack.Navigator>\r\n-      <LanStack.Screen\r\n-        name=\"Til\"\r\n-        component={LanguageScreen}\r\n-        navigation={navigation}\r\n-        options={{\r\n-          headerLeft: () => (\r\n-            <TouchableOpacity onPress={() => navigation.navigate(\"Home\")}>\r\n-              <Entypo name=\"chevron-small-left\" size={30} color=\"black\" />\r\n-            </TouchableOpacity>\r\n-          ),\r\n-        }}\r\n-      />\r\n-    </LanStack.Navigator>\r\n-  );\r\n-}\r\n-\r\n function LanguageScreen({ navigation }) {\r\n   return (\r\n     <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n       <Text>About Screen</Text>\r\n"
+                },
+                {
+                    "date": 1624363964511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from \"react\";\r\n+import { View, Text, Button } from \"react-native\";\r\n+\r\n+function LanguageScreen({ navigation }) {\r\n+  return (\r\n+    <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n+      <Text>Language Screen</Text>\r\n+    </View>\r\n+  );\r\n+}\r\n+\r\n+export default LanguageScreen;\r\n"
+                }
+            ],
+            "date": 1624363406186,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { View, Text, Button } from \"react-native\";\r\n\r\nfunction LanguageScreen({ navigation }) {\r\n  return (\r\n    <View style={{ flex: 1, alignItems: \"center\", justifyContent: \"center\" }}>\r\n      <Text>About Screen</Text>\r\n    </View>\r\n  );\r\n}\r\n\r\nexport default LanguageScreen;\r\n"
+        }
+    ]
+}
