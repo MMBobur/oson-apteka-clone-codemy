@@ -4,17 +4,20 @@ import {
   Image,
   Text,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
-  StatusBar,
   ScrollView,
   TouchableHighlight,
 } from "react-native";
 import { SearchBar } from "react-native-elements";
-import { MaterialCommunityIcons, AntDesign, Feather } from "@expo/vector-icons";
+import {
+  MaterialCommunityIcons,
+  Feather,
+  AntDesign,
+  FontAwesome5,
+} from "@expo/vector-icons";
 import HamburgerIcon from "../../assets/menu.png";
 
-function Drawer({ navigation }) {
+function Home({ navigation }) {
   return (
     <ScrollView style={{ backgroundColor: "white" }}>
       <View style={styles.container}>
@@ -41,12 +44,14 @@ function Drawer({ navigation }) {
               </TouchableOpacity>
             </View>
             <View style={{ flexDirection: "row" }}>
-              <TouchableHighlight>
+              <TouchableOpacity
+                onPress={() => navigation.navigate("Туманни танланг")}
+              >
                 <Text style={styles.Xudud}>
-                  Туманни танланг{" "}
-                  <AntDesign name="right" size={10} color="#fff" />
+                  Худуд: Узбекистон буйлаб{"  "}
+                  <FontAwesome5 name="chevron-right" size={10} color="#fff" />
                 </Text>
-              </TouchableHighlight>
+              </TouchableOpacity>
             </View>
             <View style={styles.SearchCode}>
               <TouchableHighlight
@@ -78,7 +83,10 @@ function Drawer({ navigation }) {
                   }}
                 />
               </TouchableHighlight>
-              <TouchableOpacity style={styles.qrCode}>
+              <TouchableOpacity
+                style={styles.qrCode}
+                onPress={() => navigation.navigate("BarCode")}
+              >
                 <MaterialCommunityIcons
                   name="qrcode-scan"
                   size={24}
@@ -95,7 +103,7 @@ function Drawer({ navigation }) {
   );
 }
 
-export default Drawer;
+export default Home;
 
 const styles = StyleSheet.create({
   container: {

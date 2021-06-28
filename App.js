@@ -22,7 +22,6 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import AboutScreen from "./components/Pages/AboutScreen";
 import LanguageScreen from "./components/Pages/LanguageScreen";
 import PromoActsiyaScreen from "./components/Pages/PromoActsiya";
-import OmmaviyOffertaScreen from "./components/Pages/OmmaviyOffertaScreen";
 import HistoryOfSearchScreen from "./components/Pages/HistoryOfSearchScreen";
 import { Text } from "react-native";
 
@@ -134,41 +133,6 @@ function PromoActsiyaStack({ navigation }) {
   );
 }
 
-function OffertaStack({ navigation }) {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerTitleStyle: {
-          display: "flex",
-          alignSelf: "center",
-          paddingRight: 50,
-        },
-        headerStyle: {
-          elevation: 1,
-        },
-      }}
-    >
-      <Stack.Screen
-        name="Оммавий офферта"
-        component={OmmaviyOffertaScreen}
-        navigation={navigation}
-        options={{
-          headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
-              <Entypo
-                style={{ paddingLeft: 10 }}
-                name="chevron-small-left"
-                size={30}
-                color="black"
-              />
-            </TouchableOpacity>
-          ),
-        }}
-      />
-    </Stack.Navigator>
-  );
-}
-
 function HistoryStack({ navigation }) {
   return (
     <Stack.Navigator
@@ -209,24 +173,10 @@ const _pressCall = () => {
   Linking.openURL(url);
 };
 
-function ContactStack({ navigation }) {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="COntact"
-        component={_pressCall}
-        navigation={navigation}
-        options={{
-          headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-              <Entypo name="chevron-small-left" size={30} color="black" />
-            </TouchableOpacity>
-          ),
-        }}
-      />
-    </Stack.Navigator>
-  );
-}
+const _ommaviyOfferta = () => {
+  const url = "https://api.osonapteka.uz/privacy";
+  Linking.openURL(url);
+};
 
 /////////DrawerText
 function CustomDrawerContent(props) {
@@ -259,7 +209,6 @@ function App() {
         }}
         drawerPosition="right"
       >
-        {/* <CustomDrawerContent {...props} /> */}
         <Drawer.Screen
           options={{
             drawerIcon: () => (
@@ -292,7 +241,6 @@ function App() {
         <Drawer.Screen
           options={{
             swipeEnabled: false,
-
             drawerIcon: () => (
               <Ionicons
                 style={styles.iconDrawer}
@@ -334,7 +282,7 @@ function App() {
               />
             ),
           }}
-          component={OffertaStack}
+          component={_ommaviyOfferta}
           name="Оммавий офферта"
         />
         <Drawer.Screen
@@ -364,7 +312,7 @@ function App() {
               />
             ),
           }}
-          component={ContactStack}
+          component={_pressCall}
           name="+998 71 203 6766"
         />
       </Drawer.Navigator>

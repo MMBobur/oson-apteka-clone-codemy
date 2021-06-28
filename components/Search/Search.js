@@ -94,7 +94,11 @@ export default function Search({ navigation }) {
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => {
                   return (
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                      onPress={() =>
+                        navigation.navigate("Танланган Mахсулотлар")
+                      }
+                    >
                       <View>
                         <View style={styles.search_item}>
                           <Text style={styles.searched_drug_full_name}>
