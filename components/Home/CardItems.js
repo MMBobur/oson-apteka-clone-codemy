@@ -11,6 +11,8 @@ import {
 } from "react-native";
 import axios from "axios";
 import { FlatList } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
 function CardItems() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -21,7 +23,7 @@ function CardItems() {
         setProducts(fullItem);
       });
   }, [setProducts]);
-
+  const navigation = useNavigation();
   return (
     <FlatList
       ListHeaderComponent={
@@ -34,9 +36,14 @@ function CardItems() {
       style={{ height: 446, marginBottom: 80 }}
       renderItem={({ item }) => {
         return (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DrugInfoScreen")}
+          >
             <View style={styles.Card}>
-              <TouchableOpacity style={styles.cardImageContainer}>
+              <TouchableOpacity
+                style={styles.cardImageContainer}
+                onPress={() => navigation.navigate("Тавсиф")}
+              >
                 <Image
                   source={{
                     uri: item.image,
