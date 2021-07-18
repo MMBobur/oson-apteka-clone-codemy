@@ -9,20 +9,18 @@ import {
   StatusBar,
 } from "react-native";
 import { SearchBar } from "react-native-elements";
-import { ScrollView } from "react-native-gesture-handler";
 import axios from "axios";
 import { EvilIcons } from "@expo/vector-icons";
 import { Dimensions } from "react-native";
 import SearchImage from "./SearchImage";
+import { connect } from "react-redux";
 import SearchError from "./SearchError";
 import SearchSkeleton from "./SearchSkeleton";
-// import NumberFormat from "react-number-format";
 
-export default function Search({ navigation }) {
+function Search({ navigation }) {
   const [drugs, setDrugs] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
-  // var NumberFormat = require("react-number-format");
   const handleSearch = (e) => {
     setDrugs([]);
     if (e.length >= 3) {
@@ -94,15 +92,21 @@ export default function Search({ navigation }) {
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => {
                   return (
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                      onPress={() => {
+                        navigation.navigate("Танланган Mахсулотлар");
+                        // ADD_TO_CART();
+                        // addToCart(drugs);
+                      }}
+                    >
                       <View>
                         <View style={styles.search_item}>
                           <Text style={styles.searched_drug_full_name}>
                             {item.full_name}
                           </Text>
-                          <Text style={styles.searched_drug_manufacturer_name}>
+                          {/* <Text style={styles.searched_drug_manufacturer_name}>
                             {item.manufacturer.name}
-                          </Text>
+                          </Text> */}
                         </View>
                         <View style={styles.searched_drug_container}>
                           <Text style={styles.searched_drug_price}>
@@ -130,6 +134,10 @@ export default function Search({ navigation }) {
     </View>
   );
 }
+
+// function mapStateToProps() {}
+// export default connect(null, mapStateToProps)(Search);
+export default Search;
 
 const styles = StyleSheet.create({
   SearchBarComponent: {
