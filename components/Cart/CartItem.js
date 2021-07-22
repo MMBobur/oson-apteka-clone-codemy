@@ -1,6 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import { StyleSheet } from "react-native";
-import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  TouchableOpacity,
+  TouchableHighlight,
+  ScrollView,
+  StyleSheet,
+  Dimensions,
+} from "react-native";
 import { ListItem, Avatar, Button } from "react-native-elements";
 import { AntDesign } from "@expo/vector-icons";
 import { connect } from "react-redux";
@@ -12,74 +20,100 @@ import {
   removeItem,
   addToCart,
 } from "../Actions/actions";
+import { useNavigation } from "@react-navigation/native";
+import { SwipeListView } from "react-native-swipe-list-view";
 // import { CartContext } from "../Cart/cart";
 // import { AsyncStorage } from "react-native-asyncstorage";
 // import axios from "axios";
 
 const CartItem = ({
-  img,
-  title,
+  id,
+  image_thumbnail,
+  full_name,
   price,
   amount,
   remove,
+  // manufacturer: { name },
   increase,
   decrease,
   toggle,
 }) => {
+  const navigation = useNavigation();
   return (
-    <View style={{ backgroundColor: "#fff" }}>
-      {/* {list.map((l, i) => ( */}
-      <TouchableOpacity>
-        <ListItem bottomDivider>
-          <TouchableOpacity>
-            <Avatar
-              source={{
-                // uri: l.avatar_url,
-                uri: img,
-              }}
-              style={styles.ListImage}
-            />
-          </TouchableOpacity>
-          <ListItem.Content>
-            <ListItem.Title>{title}</ListItem.Title>
-            {/* <ListItem.Subtitle style={styles.ListSubtitle}>
-                {l.manufacturer_name}
-              </ListItem.Subtitle> */}
-            <ListItem.Subtitle style={styles.ListPrice}>
-              {price}
-            </ListItem.Subtitle>
-          </ListItem.Content>
-          <ListItem.Subtitle>
-            <Button
-              icon={<AntDesign name="minus" size={14} color="black" />}
-              type="outline"
-              buttonStyle={{ borderColor: "#A1A4A6" }}
-              onPress={() => {
-                if (amount === 1) {
-                  return remove();
-                } else {
-                  return toggle("dec");
-                }
-              }}
-            />
-            {"  "}
-            <Text style={{ color: "black", marginBottom: 20 }}>{amount}</Text>
-            {"  "}
-            {/* {``} */}
-            <Button
-              icon={<AntDesign name="plus" size={14} color="black" />}
-              type="outline"
-              buttonStyle={{
-                backgroundColor: "#FCCF1B",
-                borderColor: "#FCCF1B",
-              }}
-              onPress={() => toggle("inc")}
-            />
-          </ListItem.Subtitle>
-        </ListItem>
-      </TouchableOpacity>
-      {/* ))} */}
-    </View>
+    <SwipeListView
+      renderItem={() => {
+        <View>
+          <ScrollView>
+            {/* {list.map((l, i) => ( */}
+            <TouchableHighlight
+              onPress={() => navigation.navigate("DrugInfoScreen")}
+              underlayColor="none"
+            >
+              <ListItem bottomDivider key={id}>
+                <TouchableHighlight
+                  onPress={() => navigation.navigate("Тавсиф")}
+                  underlayColor="none"
+                >
+                  <Avatar
+                    source={{
+                      uri: image_thumbnail,
+                    }}
+                    style={styles.ListImage}
+                  />
+                </TouchableHighlight>
+                <ListItem.Content>
+                  <ListItem.Title>{full_name}</ListItem.Title>
+                  <ListItem.Subtitle style={styles.ListSubtitle}>
+                    {/* {manufacturer.name} */}salom
+                  </ListItem.Subtitle>
+                  <ListItem.Subtitle style={styles.ListPrice}>
+                    {price} дан
+                  </ListItem.Subtitle>
+                </ListItem.Content>
+                <ListItem.Subtitle>
+                  <Button
+                    icon={<AntDesign name="minus" size={14} color="black" />}
+                    type="outline"
+                    buttonStyle={{ borderColor: "#A1A4A6" }}
+                    onPress={() => {
+                      if (amount === 1) {
+                        return remove();
+                      } else {
+                        return toggle("dec");
+                      }
+                    }}
+                  />
+                  {"  "}
+                  <Text style={{ color: "black", marginBottom: 20 }}>
+                    {amount}
+                  </Text>
+                  {"  "}
+                  {/* {``} */}
+                  <Button
+                    icon={<AntDesign name="plus" size={14} color="black" />}
+                    type="outline"
+                    buttonStyle={{
+                      backgroundColor: "#FCCF1B",
+                      borderColor: "#FCCF1B",
+                    }}
+                    onPress={() => toggle("inc")}
+                  />
+                </ListItem.Subtitle>
+              </ListItem>
+            </TouchableHighlight>
+            {/* ))} */}
+          </ScrollView>
+        </View>;
+      }}
+      renderHiddenItem={(data, rowMap) => (
+        <View>
+          {/* <Text>Left</Text>
+          <Text>Right</Text> */}
+        </View>
+      )}
+      leftOpenValue={0}
+      rightOpenValue={0}
+    />
   );
 };
 

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/InnerPages/NearestPage.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1624524747170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1624524747170,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n\r\nconst NearestPage = () => {\r\n  return (\r\n    <View>\r\n      <Text>This is Nearest Page</Text>\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default NearestPage;\r\n"
+        }
+    ]
+}

@@ -13,14 +13,16 @@ import axios from "axios";
 import { EvilIcons } from "@expo/vector-icons";
 import { Dimensions } from "react-native";
 import SearchImage from "./SearchImage";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import SearchError from "./SearchError";
 import SearchSkeleton from "./SearchSkeleton";
+import { addToCart } from "../Actions/actions";
 
 function Search({ navigation }) {
   const [drugs, setDrugs] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
   const handleSearch = (e) => {
     setDrugs([]);
     if (e.length >= 3) {
@@ -95,8 +97,7 @@ function Search({ navigation }) {
                     <TouchableOpacity
                       onPress={() => {
                         navigation.navigate("Танланган Mахсулотлар");
-                        // ADD_TO_CART();
-                        // addToCart(drugs);
+                        dispatch(addToCart(item));
                       }}
                     >
                       <View>

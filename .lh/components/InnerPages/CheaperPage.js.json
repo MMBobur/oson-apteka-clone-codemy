@@ -1,0 +1,638 @@
+{
+    "sourceFile": "components/InnerPages/CheaperPage.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 155,
+            "patches": [
+                {
+                    "date": 1624524699726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624526886270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,58 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n+import { StyleSheet, Text, View, StatusBar, Image, ScrollView } from \"react-native\";\r\n \r\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n-      <Text>This is Cheaper Page</Text>\r\n+      <ScrollView>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+        <Text>This is Cheaper Page</Text>\r\n+      </ScrollView>\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624526926405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,57 +1,19 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar, Image, ScrollView } from \"react-native\";\r\n+import {\r\n+  StyleSheet,\r\n+  Text,\r\n+  View,\r\n+  StatusBar,\r\n+  Image,\r\n+  ScrollView,\r\n+} from \"react-native\";\r\n \r\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n       <ScrollView>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n-        <Text>This is Cheaper Page</Text>\r\n+        <View></View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624527111936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,13 @@\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n       <ScrollView>\r\n-        <View></View>\r\n+        <View>\r\n+          <View>\r\n+            <Text>SD Pharm Brand</Text>\r\n+          </View>\r\n+        </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624527516528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,21 @@\n   StatusBar,\r\n   Image,\r\n   ScrollView,\r\n } from \"react-native\";\r\n+import { MaterialCommunityIcons } from \"@expo/vector-icons\";\r\n \r\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n       <ScrollView>\r\n         <View>\r\n           <View>\r\n+            <MaterialCommunityIcons\r\n+              name=\"home-map-marker\"\r\n+              size={24}\r\n+              color=\"black\"\r\n+            />\r\n             <Text>SD Pharm Brand</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n"
+                },
+                {
+                    "date": 1624527562431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           <View>\r\n             <MaterialCommunityIcons\r\n               name=\"home-map-marker\"\r\n               size={24}\r\n-              color=\"black\"\r\n+              color=\"gray\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n           </View>\r\n         </View>\r\n"
+                },
+                {
+                    "date": 1624527645094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           <View>\r\n             <MaterialCommunityIcons\r\n               name=\"home-map-marker\"\r\n               size={24}\r\n-              color=\"gray\"\r\n+              color=\"#90AAB7\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n           </View>\r\n         </View>\r\n"
+                },
+                {
+                    "date": 1624527767422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n       <ScrollView>\r\n-        <View>\r\n+        <View style={styles.container}>\r\n           <View>\r\n             <MaterialCommunityIcons\r\n               name=\"home-map-marker\"\r\n               size={24}\r\n@@ -28,4 +28,10 @@\n   );\r\n };\r\n \r\n export default CheaperPage;\r\n+\r\n+const styles = StyleSheet.create({\r\n+  container: {\r\n+    borderColor: \"white\",\r\n+  },\r\n+});\r\n"
+                },
+                {
+                    "date": 1624527780257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,7 @@\n export default CheaperPage;\r\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n-    borderColor: \"white\",\r\n+    backgroundColor: \"white\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528034530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <View style={styles.container}>\r\n           <View>\r\n             <MaterialCommunityIcons\r\n               name=\"home-map-marker\"\r\n-              size={24}\r\n+              size={54}\r\n               color=\"#90AAB7\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n           </View>\r\n"
+                },
+                {
+                    "date": 1624528047060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <View style={styles.container}>\r\n           <View>\r\n             <MaterialCommunityIcons\r\n               name=\"home-map-marker\"\r\n-              size={54}\r\n+              size={52}\r\n               color=\"#90AAB7\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n           </View>\r\n"
+                },
+                {
+                    "date": 1624528106258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n       <ScrollView>\r\n         <View style={styles.container}>\r\n           <View>\r\n             <MaterialCommunityIcons\r\n+              style={styles.DrugIcon}\r\n               name=\"home-map-marker\"\r\n               size={52}\r\n               color=\"#90AAB7\"\r\n             />\r\n@@ -33,5 +34,8 @@\n const styles = StyleSheet.create({\r\n   container: {\r\n     backgroundColor: \"white\",\r\n   },\r\n+  DrugIcon: {\r\n+    backgroundColor: \"#FFF\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528132398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,7 @@\n   container: {\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n-    backgroundColor: \"#FFF\",\r\n+    backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528142630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,8 @@\n   container: {\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n+    display: \"none\",\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528149186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,7 @@\n   container: {\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n-    display: \"none\",\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528165164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,8 @@\n   container: {\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n+    width: 50,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528180774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,8 @@\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n+    borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624528193563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n export default CheaperPage;\r\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n+    marginTop: 20,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528200365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n export default CheaperPage;\r\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n-    marginTop: 20,\r\n+    margin: 20,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528220653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n export default CheaperPage;\r\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n-    margin: 20,\r\n+    marginTop: 10,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528231130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n     marginTop: 10,\r\n+    marginVertical: 5,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528241480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n     marginTop: 10,\r\n-    marginVertical: 5,\r\n+    marginHorizontal: 5,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528248163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \r\n const styles = StyleSheet.create({\r\n   container: {\r\n     marginTop: 10,\r\n-    marginHorizontal: 5,\r\n+    marginHorizontal: 8,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528287947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n const CheaperPage = () => {\r\n   return (\r\n     <View>\r\n       <ScrollView>\r\n-        <View style={styles.container}>\r\n+        <View style={styles.Itemcontainer}>\r\n           <View>\r\n             <MaterialCommunityIcons\r\n               style={styles.DrugIcon}\r\n               name=\"home-map-marker\"\r\n@@ -31,11 +31,11 @@\n \r\n export default CheaperPage;\r\n \r\n const styles = StyleSheet.create({\r\n-  container: {\r\n+  Itemcontainer: {\r\n     marginTop: 10,\r\n-    marginHorizontal: 8,\r\n+    marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624528386918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   return (\r\n     <View>\r\n       <ScrollView>\r\n         <View style={styles.Itemcontainer}>\r\n-          <View>\r\n+          <View style={styles.FirsPart}>\r\n             <MaterialCommunityIcons\r\n               style={styles.DrugIcon}\r\n               name=\"home-map-marker\"\r\n               size={52}\r\n@@ -41,5 +41,8 @@\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n+  FirsPart: {\r\n+    display: \"flex\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624530968090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,7 @@\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   FirsPart: {\r\n     display: \"flex\",\r\n+    flexDirection: \"column\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531215824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n               size={52}\r\n               color=\"#90AAB7\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n+            <Text>200.6 KM</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n@@ -43,7 +44,7 @@\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   FirsPart: {\r\n     display: \"flex\",\r\n-    flexDirection: \"column\",\r\n+    flexDirection: \"row\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531271271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,6 +45,7 @@\n   },\r\n   FirsPart: {\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n+    justifyContent: \"space-between\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531641945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n+    marginLeft: 10,\r\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624531655682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n-    marginLeft: 10,\r\n+    // marginLeft: 10,\r\n+    paddingLeft: 10,\r\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624531663259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n   },\r\n   DrugIcon: {\r\n-    // marginLeft: 10,\r\n-    paddingLeft: 10,\r\n+    marginLeft: 10,\r\n+    // paddingLeft: 10,\r\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624531684781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   FirsPart: {\r\n+    marginTop: 10,\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624531714159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n   Itemcontainer: {\r\n     marginTop: 10,\r\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n+    borderRadius: 10,\r\n   },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1624531724601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n   Itemcontainer: {\r\n     marginTop: 10,\r\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n-    borderRadius: 10,\r\n+    borderRadius: 15,\r\n   },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1624531742822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,18 +38,18 @@\n     marginHorizontal: 10,\r\n     backgroundColor: \"white\",\r\n     borderRadius: 15,\r\n   },\r\n+  FirsPart: {\r\n+    marginTop: 10,\r\n+    display: \"flex\",\r\n+    flexDirection: \"row\",\r\n+    justifyContent: \"space-between\",\r\n+  },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n-  FirsPart: {\r\n-    marginTop: 10,\r\n-    display: \"flex\",\r\n-    flexDirection: \"row\",\r\n-    justifyContent: \"space-between\",\r\n-  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531781253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,8 @@\n     width: 50,\r\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n+  Textkm: {\r\n+    color: \"gray\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531801775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n               size={52}\r\n               color=\"#90AAB7\"\r\n             />\r\n             <Text>SD Pharm Brand</Text>\r\n-            <Text>200.6 KM</Text>\r\n+            <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n@@ -52,7 +52,8 @@\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   Textkm: {\r\n+    fontSize: 10,\r\n     color: \"gray\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531807074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,8 @@\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   Textkm: {\r\n-    fontSize: 10,\r\n+    fontSize: 15,\r\n     color: \"gray\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531823278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   Textkm: {\r\n-    fontSize: 15,\r\n+    marginRight: 5,\r\n+    fontSize: 13,\r\n     color: \"gray\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531829055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n   Textkm: {\r\n-    marginRight: 5,\r\n+    marginRight: 8,\r\n     fontSize: 13,\r\n     color: \"gray\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624531890364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n               name=\"home-map-marker\"\r\n               size={52}\r\n               color=\"#90AAB7\"\r\n             />\r\n-            <Text>SD Pharm Brand</Text>\r\n+            <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n@@ -44,8 +44,11 @@\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n   },\r\n+  AptekaName: {\r\n+    marginRight: 10,\r\n+  },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n     width: 50,\r\n"
+                },
+                {
+                    "date": 1624531897710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n   },\r\n   AptekaName: {\r\n-    marginRight: 10,\r\n+    marginRight: 50,\r\n   },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1624531913605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,10 @@\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n   },\r\n   AptekaName: {\r\n-    marginRight: 50,\r\n+    marginTop: 10,\r\n+    marginRight: 55,\r\n   },\r\n   DrugIcon: {\r\n     marginLeft: 10,\r\n     // paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1624531990380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n             />\r\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n+          <Text>24 000 cум</Text>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624532031354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n             />\r\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n-          <Text>24 000 cум</Text>\r\n+          <Text>24 000 som</Text>\r\n+          <Text>Minimal narxi: 24 000 som</Text>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624532145592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             />\r\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n-          <Text>24 000 som</Text>\r\n+          <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text>Minimal narxi: 24 000 som</Text>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n@@ -62,5 +62,8 @@\n     marginRight: 8,\r\n     fontSize: 13,\r\n     color: \"gray\",\r\n   },\r\n+  drugCost: {\r\n+    color: \"#3772D0\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532162364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,7 @@\n     color: \"gray\",\r\n   },\r\n   drugCost: {\r\n     color: \"#3772D0\",\r\n+    fontWeight: \"700\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532182420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,7 @@\n   },\r\n   drugCost: {\r\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n+    fontSize: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532191470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n   },\r\n   drugCost: {\r\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n-    fontSize: 25,\r\n+    fontSize: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532200072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n   },\r\n   drugCost: {\r\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n-    fontSize: 20,\r\n+    fontSize: 19,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532226198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,7 @@\n   drugCost: {\r\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n     fontSize: 19,\r\n+    marginTop: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532234728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,7 @@\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n     fontSize: 19,\r\n     marginTop: 30,\r\n+    marginLeft: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532244327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,7 @@\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n     fontSize: 19,\r\n     marginTop: 30,\r\n-    marginLeft: 20,\r\n+    marginLeft: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532277350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n-          <Text>Minimal narxi: 24 000 som</Text>\r\n+          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n@@ -69,5 +69,12 @@\n     fontSize: 19,\r\n     marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n+  drugCostMinimal: {\r\n+    color: \"#3772D0\",\r\n+    fontWeight: \"700\",\r\n+    fontSize: 19,\r\n+    marginTop: 30,\r\n+    marginLeft: 30,\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532283397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,8 +73,8 @@\n   drugCostMinimal: {\r\n     color: \"#3772D0\",\r\n     fontWeight: \"700\",\r\n     fontSize: 19,\r\n-    marginTop: 30,\r\n+    // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532310640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,11 +70,11 @@\n     marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n   drugCostMinimal: {\r\n-    color: \"#3772D0\",\r\n+    color: \"#90AAB7\",\r\n     fontWeight: \"700\",\r\n-    fontSize: 19,\r\n+    fontSize: 10,\r\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532325091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n   },\r\n   drugCostMinimal: {\r\n     color: \"#90AAB7\",\r\n     fontWeight: \"700\",\r\n-    fontSize: 10,\r\n+    fontSize: 12,\r\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532330425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,10 +71,10 @@\n     marginLeft: 30,\r\n   },\r\n   drugCostMinimal: {\r\n     color: \"#90AAB7\",\r\n-    fontWeight: \"700\",\r\n-    fontSize: 12,\r\n+    // fontWeight: \"700\",\r\n+    fontSize: 11,\r\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532472241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,12 @@\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n+          <View>\r\n+            Olmazor t-n, Sebzor k.4A <tr />\r\n+            Mo'ljal: \"Sebzor\" dokoni; \"Sebzor <tr /> massivi\" bekatidan 50m\r\n+          </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n@@ -71,9 +75,8 @@\n     marginLeft: 30,\r\n   },\r\n   drugCostMinimal: {\r\n     color: \"#90AAB7\",\r\n-    // fontWeight: \"700\",\r\n     fontSize: 11,\r\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n"
+                },
+                {
+                    "date": 1624532488598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n           <View>\r\n-            Olmazor t-n, Sebzor k.4A <tr />\r\n-            Mo'ljal: \"Sebzor\" dokoni; \"Sebzor <tr /> massivi\" bekatidan 50m\r\n+            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n+            bekatidan 50m\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624532535487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,12 @@\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n           <View>\r\n-            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n-            bekatidan 50m\r\n+            <Text>\r\n+              Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor\r\n+              massivi\" bekatidan 50m\r\n+            </Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624532552305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,14 @@\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n-          <View>\r\n-            <Text>\r\n-              Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor\r\n-              massivi\" bekatidan 50m\r\n-            </Text>\r\n-          </View>\r\n+          {/* <View> */}\r\n+          <Text>\r\n+            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n+            bekatidan 50m\r\n+          </Text>\r\n+          {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624532558952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,13 @@\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n-          {/* <View> */}\r\n           <Text>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n+          {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624532600040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 som</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n-          <Text>\r\n+          <Text style={styles.moljal}>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n           {/* <View> */}\r\n@@ -81,5 +81,8 @@\n     fontSize: 11,\r\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n+  moljal: {\r\n+    lineHeight: 10,\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532625100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,8 @@\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n   moljal: {\r\n-    lineHeight: 10,\r\n+    // lineHeight: 10,\r\n+    letterSpacing: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532632969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     marginLeft: 30,\r\n   },\r\n   moljal: {\r\n     // lineHeight: 10,\r\n-    letterSpacing: 10,\r\n+    letterSpacing: 4,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532645615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,8 @@\n     marginLeft: 30,\r\n   },\r\n   moljal: {\r\n     // lineHeight: 10,\r\n-    letterSpacing: 4,\r\n+    letterSpacing: 2,\r\n+    width: 50,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532653099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n   },\r\n   moljal: {\r\n     // lineHeight: 10,\r\n     letterSpacing: 2,\r\n-    width: 50,\r\n+    width: 250,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532675887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     // marginTop: 30,\r\n     marginLeft: 30,\r\n   },\r\n   moljal: {\r\n-    // lineHeight: 10,\r\n     letterSpacing: 2,\r\n     width: 250,\r\n+    marginLeft: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532683609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,7 @@\n   },\r\n   moljal: {\r\n     letterSpacing: 2,\r\n     width: 250,\r\n-    marginLeft: 10,\r\n+    marginLeft: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532695068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,6 +85,7 @@\n   moljal: {\r\n     letterSpacing: 2,\r\n     width: 250,\r\n     marginLeft: 25,\r\n+    marginTop: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532704138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,7 +85,7 @@\n   moljal: {\r\n     letterSpacing: 2,\r\n     width: 250,\r\n     marginLeft: 25,\r\n-    marginTop: 20,\r\n+    marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532712144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,8 @@\n   },\r\n   moljal: {\r\n     letterSpacing: 2,\r\n     width: 250,\r\n-    marginLeft: 25,\r\n+    marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532751071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n           <Text style={styles.moljal}>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n+          <Text>(94) 123 93 90</Text>\r\n           {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n"
+                },
+                {
+                    "date": 1624532797667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n           <Text style={styles.moljal}>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n-          <Text>(94) 123 93 90</Text>\r\n+          <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n@@ -88,5 +88,11 @@\n     width: 250,\r\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n+  TelPhone: {\r\n+    letterSpacing: 2,\r\n+    width: 250,\r\n+    marginLeft: 27,\r\n+    marginTop: 10,\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532803992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n   TelPhone: {\r\n-    letterSpacing: 2,\r\n+    // letterSpacing: 2,\r\n     width: 250,\r\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n"
+                },
+                {
+                    "date": 1624532839031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n+          <Text style={styles.TelPhone}>Shikoyat qilish</Text>\r\n           {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n@@ -89,9 +90,8 @@\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n   TelPhone: {\r\n-    // letterSpacing: 2,\r\n     width: 250,\r\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n"
+                },
+                {
+                    "date": 1624532850639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n-          <Text style={styles.TelPhone}>Shikoyat qilish</Text>\r\n+          <Text style={styles.TelPhone}>shikoyat qilish</Text>\r\n           {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n"
+                },
+                {
+                    "date": 1624532861368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n-          <Text style={styles.TelPhone}>shikoyat qilish</Text>\r\n+          <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n           {/* <View> */}\r\n           {/* </View> */}\r\n         </View>\r\n       </ScrollView>\r\n"
+                },
+                {
+                    "date": 1624532876230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,5 +94,10 @@\n     width: 250,\r\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n+  shikoyat: {\r\n+    width: 250,\r\n+    marginLeft: 27,\r\n+    marginTop: 10,\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532887462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,8 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     width: 250,\r\n-    marginLeft: 27,\r\n+    marginLeft: 200,\r\n     marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532895392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,8 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     width: 250,\r\n-    marginLeft: 200,\r\n+    marginLeft: 220,\r\n     marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532904314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,8 @@\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n-    width: 250,\r\n     marginLeft: 220,\r\n-    marginTop: 10,\r\n+    // marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532916711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,7 +96,7 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     marginLeft: 220,\r\n-    // marginTop: 10,\r\n+    marginTop: -50,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532924233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,7 +96,7 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     marginLeft: 220,\r\n-    marginTop: -50,\r\n+    marginTop: -20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532933842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n     marginLeft: 27,\r\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n+    color: \"red\",\r\n     marginLeft: 220,\r\n     marginTop: -20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532955312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     color: \"red\",\r\n+    fontSize: 10,\r\n     marginLeft: 220,\r\n     marginTop: -20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624532967958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n     marginTop: 10,\r\n   },\r\n   shikoyat: {\r\n     color: \"red\",\r\n-    fontSize: 10,\r\n+    fontSize: 11,\r\n     marginLeft: 220,\r\n-    marginTop: -20,\r\n+    marginTop: -15,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533024773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   View,\r\n   StatusBar,\r\n   Image,\r\n   ScrollView,\r\n+  TouchableOpacity,\r\n } from \"react-native\";\r\n import { MaterialCommunityIcons } from \"@expo/vector-icons\";\r\n \r\n const CheaperPage = () => {\r\n@@ -31,10 +32,9 @@\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n-          {/* <View> */}\r\n-          {/* </View> */}\r\n+          <View></View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624533070507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,15 @@\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n-          <View></View>\r\n+          <View>\r\n+            <TouchableOpacity>\r\n+              <Text>Qongiroq</Text>\r\n+              <Text>Xaritada</Text>\r\n+              <Text>Ulashish</Text>\r\n+            </TouchableOpacity>\r\n+          </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624533105467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,15 @@\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n           <View>\r\n             <TouchableOpacity>\r\n               <Text>Qongiroq</Text>\r\n-              <Text>Xaritada</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity>\r\n               <Text>Ulashish</Text>\r\n             </TouchableOpacity>\r\n+            <TouchableOpacity>\r\n+              <Text>Xaritada</Text>\r\n+            </TouchableOpacity>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624533170678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             />\r\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n-          <Text style={styles.drugCost}>24 000 som</Text>\r\n+          <Text style={styles.drugCost}>24 000 so'm</Text>\r\n           <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n           <Text style={styles.moljal}>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n"
+                },
+                {
+                    "date": 1624533178044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n             <Text style={styles.Textkm}>200.6 KM</Text>\r\n           </View>\r\n           <Text style={styles.drugCost}>24 000 so'm</Text>\r\n-          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 som</Text>\r\n+          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 so'm</Text>\r\n           <Text style={styles.moljal}>\r\n             Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n             bekatidan 50m\r\n           </Text>\r\n"
+                },
+                {
+                    "date": 1624533214993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,5 +110,9 @@\n     fontSize: 11,\r\n     marginLeft: 220,\r\n     marginTop: -15,\r\n   },\r\n+  CardaTouch: {\r\n+      display: \"flex\"\r\n+      flexDirection: \"row\"\r\n+  }\r\n });\r\n"
+                },
+                {
+                    "date": 1624533237756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             bekatidan 50m\r\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n-          <View>\r\n+          <View style={styles.CardaTouch}>\r\n             <TouchableOpacity>\r\n               <Text>Qongiroq</Text>\r\n             </TouchableOpacity>\r\n             <TouchableOpacity>\r\n@@ -111,8 +111,8 @@\n     marginLeft: 220,\r\n     marginTop: -15,\r\n   },\r\n   CardaTouch: {\r\n-      display: \"flex\"\r\n-      flexDirection: \"row\"\r\n-  }\r\n+    display: \"flex\",\r\n+    flexDirection: \"row\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533248564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,6 +113,7 @@\n   },\r\n   CardaTouch: {\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n+    justifyContent: \"space-between\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533259632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,7 +113,7 @@\n   },\r\n   CardaTouch: {\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n-    justifyContent: \"space-between\",\r\n+    justifyContent: \"space-around\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533272449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,6 +114,7 @@\n   CardaTouch: {\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-around\",\r\n+    marginTop: 10,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533282896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,7 +114,7 @@\n   CardaTouch: {\r\n     display: \"flex\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-around\",\r\n-    marginTop: 10,\r\n+    marginTop: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533318867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,15 +33,15 @@\n           </Text>\r\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n           <View style={styles.CardaTouch}>\r\n-            <TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n               <Text>Qongiroq</Text>\r\n             </TouchableOpacity>\r\n-            <TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n               <Text>Ulashish</Text>\r\n             </TouchableOpacity>\r\n-            <TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n               <Text>Xaritada</Text>\r\n             </TouchableOpacity>\r\n           </View>\r\n         </View>\r\n"
+                },
+                {
+                    "date": 1624533353217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,5 +116,8 @@\n     flexDirection: \"row\",\r\n     justifyContent: \"space-around\",\r\n     marginTop: 30,\r\n   },\r\n+  Buttons: {\r\n+    backgroundColor: \"#F5F5F3\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533376636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,7 +117,8 @@\n     justifyContent: \"space-around\",\r\n     marginTop: 30,\r\n   },\r\n   Buttons: {\r\n+    fontSize: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533387819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,8 @@\n     justifyContent: \"space-around\",\r\n     marginTop: 30,\r\n   },\r\n   Buttons: {\r\n-    fontSize: 15,\r\n+    fontSize: 25,\r\n     backgroundColor: \"#F5F5F3\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533436253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,6 +119,7 @@\n   },\r\n   Buttons: {\r\n     fontSize: 25,\r\n     backgroundColor: \"#F5F5F3\",\r\n+    color: \"#90AAB7\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533504769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,15 +34,15 @@\n           <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n           <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n           <View style={styles.CardaTouch}>\r\n             <TouchableOpacity style={styles.Buttons}>\r\n-              <Text>Qongiroq</Text>\r\n+              <Text style={styles.ButtonText}>Qongiroq</Text>\r\n             </TouchableOpacity>\r\n             <TouchableOpacity style={styles.Buttons}>\r\n-              <Text>Ulashish</Text>\r\n+              <Text style={styles.ButtonText}>Ulashish</Text>\r\n             </TouchableOpacity>\r\n             <TouchableOpacity style={styles.Buttons}>\r\n-              <Text>Xaritada</Text>\r\n+              <Text style={styles.ButtonText}>Xaritada</Text>\r\n             </TouchableOpacity>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n@@ -121,5 +121,10 @@\n     fontSize: 25,\r\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n+  ButtonText: {\r\n+    fontSize: 25,\r\n+    backgroundColor: \"#F5F5F3\",\r\n+    color: \"#90AAB7\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533513541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n-    fontSize: 25,\r\n+    fontSize: 18,\r\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533520413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,8 @@\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n     fontSize: 18,\r\n-    backgroundColor: \"#F5F5F3\",\r\n+    // backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533527515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,7 +124,7 @@\n   },\r\n   ButtonText: {\r\n     fontSize: 18,\r\n     // backgroundColor: \"#F5F5F3\",\r\n-    color: \"#90AAB7\",\r\n+    color: \"blue\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533540993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,7 +124,7 @@\n   },\r\n   ButtonText: {\r\n     fontSize: 18,\r\n     // backgroundColor: \"#F5F5F3\",\r\n-    color: \"blue\",\r\n+    color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533548327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,7 @@\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n     fontSize: 18,\r\n-    // backgroundColor: \"#F5F5F3\",\r\n     color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533576220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n+    margin: 10,\r\n     fontSize: 18,\r\n     color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533596073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,8 +118,9 @@\n     marginTop: 30,\r\n   },\r\n   Buttons: {\r\n     fontSize: 25,\r\n+    borderRadius: 10,\r\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n"
+                },
+                {
+                    "date": 1624533615996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,8 +124,9 @@\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n     margin: 10,\r\n+    marginTop: 7,\r\n     fontSize: 18,\r\n     color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533623581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,10 +123,10 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n-    margin: 10,\r\n-    marginTop: 7,\r\n+    // margin: 10,\r\n+    // marginTop: 7,\r\n     fontSize: 18,\r\n     color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533640247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,10 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n+    marginHorizontal: 5,\r\n+    marginVertical: 10,\r\n     // margin: 10,\r\n     // marginTop: 7,\r\n     fontSize: 18,\r\n     color: \"#3772D0\",\r\n"
+                },
+                {
+                    "date": 1624533649449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,10 +123,10 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n-    marginHorizontal: 5,\r\n-    marginVertical: 10,\r\n+    marginHorizontal: 10,\r\n+    marginVertical: 5,\r\n     // margin: 10,\r\n     // marginTop: 7,\r\n     fontSize: 18,\r\n     color: \"#3772D0\",\r\n"
+                },
+                {
+                    "date": 1624533660395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,8 +127,8 @@\n     marginHorizontal: 10,\r\n     marginVertical: 5,\r\n     // margin: 10,\r\n     // marginTop: 7,\r\n-    fontSize: 18,\r\n+    fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533667788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n-    marginHorizontal: 10,\r\n+    marginHorizontal: 15,\r\n     marginVertical: 5,\r\n     // margin: 10,\r\n     // marginTop: 7,\r\n     fontSize: 16,\r\n"
+                },
+                {
+                    "date": 1624533678946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n     marginHorizontal: 15,\r\n-    marginVertical: 5,\r\n+    marginVertical: 7,\r\n     // margin: 10,\r\n     // marginTop: 7,\r\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n"
+                },
+                {
+                    "date": 1624533699526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n     marginTop: 30,\r\n   },\r\n   Buttons: {\r\n     fontSize: 25,\r\n-    borderRadius: 10,\r\n+    borderRadius: 5,\r\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n"
+                },
+                {
+                    "date": 1624533715707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n     marginTop: 30,\r\n   },\r\n   Buttons: {\r\n     fontSize: 25,\r\n-    borderRadius: 5,\r\n+    borderRadius: 7,\r\n     backgroundColor: \"#F5F5F3\",\r\n     color: \"#90AAB7\",\r\n   },\r\n   ButtonText: {\r\n"
+                },
+                {
+                    "date": 1624533820272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,12 @@\n             <TouchableOpacity style={styles.Buttons}>\r\n               <Text style={styles.ButtonText}>Xaritada</Text>\r\n             </TouchableOpacity>\r\n           </View>\r\n+          <View>\r\n+            <Text>Rengalin Tabletka №20</Text>\r\n+            <Text>24 000 so'm (x1)</Text>\r\n+          </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624533902541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <TouchableOpacity style={styles.Buttons}>\r\n               <Text style={styles.ButtonText}>Xaritada</Text>\r\n             </TouchableOpacity>\r\n           </View>\r\n-          <View>\r\n+          <View style={styles}>\r\n             <Text>Rengalin Tabletka №20</Text>\r\n             <Text>24 000 so'm (x1)</Text>\r\n           </View>\r\n         </View>\r\n@@ -134,5 +134,11 @@\n     // marginTop: 7,\r\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n+  bottomCard: {\r\n+    backgroundColor: \"red\",\r\n+  },\r\n+  bottomCardText: {\r\n+    color: \"green\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624533944715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,11 @@\n             <TouchableOpacity style={styles.Buttons}>\r\n               <Text style={styles.ButtonText}>Xaritada</Text>\r\n             </TouchableOpacity>\r\n           </View>\r\n-          <View style={styles}>\r\n-            <Text>Rengalin Tabletka №20</Text>\r\n-            <Text>24 000 so'm (x1)</Text>\r\n+          <View style={styles.bottomCard}>\r\n+            <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n+            <Text style={styles.bottomCardText}>24 000 so'm (x1)</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624533972615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,9 @@\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n+    marginBottom: 20,\r\n     backgroundColor: \"red\",\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n"
+                },
+                {
+                    "date": 1624533984129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,9 @@\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n+    marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"red\",\r\n   },\r\n   bottomCardText: {\r\n"
+                },
+                {
+                    "date": 1624534002047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n   },\r\n   bottomCard: {\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n-    backgroundColor: \"red\",\r\n+    backgroundColor: \"#F5F5F3\",\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534013764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n   bottomCard: {\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n+    borderRadius: 5,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534019545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n   bottomCard: {\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n-    borderRadius: 5,\r\n+    borderRadius: 10,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534048353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,12 +135,13 @@\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n+    width: 250,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n-    borderRadius: 10,\r\n+    borderRadius: 8,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534058654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,9 @@\n     fontSize: 16,\r\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n+    display: \"flex\",\r\n     width: 250,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534066791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,8 +136,9 @@\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n+    justifyContent: \"center\",\r\n     width: 250,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534075513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,9 @@\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n     justifyContent: \"center\",\r\n+    alignSelf: \"center\",\r\n     width: 250,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534084062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,11 +136,10 @@\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n-    justifyContent: \"center\",\r\n     alignSelf: \"center\",\r\n-    width: 250,\r\n+    width: 300,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n"
+                },
+                {
+                    "date": 1624534111303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 300,\r\n+    width: 320,\r\n     marginTop: 10,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n"
+                },
+                {
+                    "date": 1624534130609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n   bottomCard: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 320,\r\n-    marginTop: 10,\r\n+    marginTop: 15,\r\n     marginBottom: 20,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534136262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 320,\r\n     marginTop: 15,\r\n-    marginBottom: 20,\r\n+    marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n   },\r\n   bottomCardText: {\r\n"
+                },
+                {
+                    "date": 1624534157217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,7 +144,9 @@\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n   },\r\n   bottomCardText: {\r\n+    display: \"flex\",\r\n+    flexDirection: \"row\",\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534162900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n-    alignSelf: \"center\",\r\n+    // alignSelf: \"center\",\r\n     width: 320,\r\n     marginTop: 15,\r\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534173886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,10 @@\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n-    // alignSelf: \"center\",\r\n+    alignSelf: \"center\",\r\n+    flexDirection: \"row\",\r\n     width: 320,\r\n     marginTop: 15,\r\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534182332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,7 @@\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n   },\r\n   bottomCardText: {\r\n-    display: \"flex\",\r\n-    flexDirection: \"row\",\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534206991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n   bottomCard: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     flexDirection: \"row\",\r\n+    justifyContent: \"space-between\",\r\n     width: 320,\r\n     marginTop: 15,\r\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n"
+                },
+                {
+                    "date": 1624534217312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,8 +144,9 @@\n     marginTop: 15,\r\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n+    height: 30,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534239625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,17 +136,18 @@\n     color: \"#3772D0\",\r\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n+    alignContent: \"center\",\r\n     alignSelf: \"center\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n     width: 320,\r\n     marginTop: 15,\r\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n-    height: 30,\r\n+    height: 40,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534246581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,9 @@\n   },\r\n   bottomCard: {\r\n     display: \"flex\",\r\n     alignContent: \"center\",\r\n+    alignItems: \"center\",\r\n     alignSelf: \"center\",\r\n     flexDirection: \"row\",\r\n     justifyContent: \"space-between\",\r\n     width: 320,\r\n"
+                },
+                {
+                    "date": 1624534276201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,9 @@\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n     height: 40,\r\n+    marginHorizontal: 10,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534290115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,10 @@\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n     height: 40,\r\n-    marginHorizontal: 10,\r\n+    // marginHorizontal: 10,\r\n+    marginVertical: 10,\r\n   },\r\n   bottomCardText: {\r\n     color: \"green\",\r\n   },\r\n"
+                },
+                {
+                    "date": 1624534298830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,10 +148,10 @@\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n     height: 40,\r\n     // marginHorizontal: 10,\r\n-    marginVertical: 10,\r\n   },\r\n   bottomCardText: {\r\n+    marginVertical: 10,\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534307191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,11 +147,9 @@\n     marginBottom: 15,\r\n     backgroundColor: \"#F5F5F3\",\r\n     borderRadius: 8,\r\n     height: 40,\r\n-    // marginHorizontal: 10,\r\n   },\r\n   bottomCardText: {\r\n-    marginVertical: 10,\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534319462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,7 +149,8 @@\n     borderRadius: 8,\r\n     height: 40,\r\n   },\r\n   bottomCardText: {\r\n+    marginRight: 10,\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534330228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,7 +150,8 @@\n     height: 40,\r\n   },\r\n   bottomCardText: {\r\n     marginRight: 10,\r\n+    marginLeft: 10,\r\n     color: \"green\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534384963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,7 +151,7 @@\n   },\r\n   bottomCardText: {\r\n     marginRight: 10,\r\n     marginLeft: 10,\r\n-    color: \"green\",\r\n+    color: \"black\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534402169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,5 +153,10 @@\n     marginRight: 10,\r\n     marginLeft: 10,\r\n     color: \"black\",\r\n   },\r\n+  bottomCardText2: {\r\n+    marginRight: 10,\r\n+    marginLeft: 10,\r\n+    color: \"black\",\r\n+  },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534409045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n             </TouchableOpacity>\r\n           </View>\r\n           <View style={styles.bottomCard}>\r\n             <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n-            <Text style={styles.bottomCardText}>24 000 so'm (x1)</Text>\r\n+            <Text style={styles.bottomCardText2}>24 000 so'm (x1)</Text>\r\n           </View>\r\n         </View>\r\n       </ScrollView>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1624534447767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,7 +156,8 @@\n   },\r\n   bottomCardText2: {\r\n     marginRight: 10,\r\n     marginLeft: 10,\r\n+    fontWeight: \"700\",\r\n     color: \"black\",\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624534525542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,116 @@\n             <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n             <Text style={styles.bottomCardText2}>24 000 so'm (x1)</Text>\r\n           </View>\r\n         </View>\r\n+        {/* Second Card */}\r\n+        <View style={styles.Itemcontainer}>\r\n+          <View style={styles.FirsPart}>\r\n+            <MaterialCommunityIcons\r\n+              style={styles.DrugIcon}\r\n+              name=\"home-map-marker\"\r\n+              size={52}\r\n+              color=\"#90AAB7\"\r\n+            />\r\n+            <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n+            <Text style={styles.Textkm}>200.6 KM</Text>\r\n+          </View>\r\n+          <Text style={styles.drugCost}>24 000 so'm</Text>\r\n+          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 so'm</Text>\r\n+          <Text style={styles.moljal}>\r\n+            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n+            bekatidan 50m\r\n+          </Text>\r\n+          <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n+          <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n+          <View style={styles.CardaTouch}>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Qongiroq</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Ulashish</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Xaritada</Text>\r\n+            </TouchableOpacity>\r\n+          </View>\r\n+          <View style={styles.bottomCard}>\r\n+            <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n+            <Text style={styles.bottomCardText2}>24 000 so'm (x1)</Text>\r\n+          </View>\r\n+        </View>\r\n+        {/* Third Card */}\r\n+        <View style={styles.Itemcontainer}>\r\n+          <View style={styles.FirsPart}>\r\n+            <MaterialCommunityIcons\r\n+              style={styles.DrugIcon}\r\n+              name=\"home-map-marker\"\r\n+              size={52}\r\n+              color=\"#90AAB7\"\r\n+            />\r\n+            <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n+            <Text style={styles.Textkm}>200.6 KM</Text>\r\n+          </View>\r\n+          <Text style={styles.drugCost}>24 000 so'm</Text>\r\n+          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 so'm</Text>\r\n+          <Text style={styles.moljal}>\r\n+            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n+            bekatidan 50m\r\n+          </Text>\r\n+          <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n+          <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n+          <View style={styles.CardaTouch}>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Qongiroq</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Ulashish</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Xaritada</Text>\r\n+            </TouchableOpacity>\r\n+          </View>\r\n+          <View style={styles.bottomCard}>\r\n+            <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n+            <Text style={styles.bottomCardText2}>24 000 so'm (x1)</Text>\r\n+          </View>\r\n+        </View>\r\n+        {/* Fifth Card */}\r\n+        <View style={styles.Itemcontainer}>\r\n+          <View style={styles.FirsPart}>\r\n+            <MaterialCommunityIcons\r\n+              style={styles.DrugIcon}\r\n+              name=\"home-map-marker\"\r\n+              size={52}\r\n+              color=\"#90AAB7\"\r\n+            />\r\n+            <Text style={styles.AptekaName}>SD Pharm Brand</Text>\r\n+            <Text style={styles.Textkm}>200.6 KM</Text>\r\n+          </View>\r\n+          <Text style={styles.drugCost}>24 000 so'm</Text>\r\n+          <Text style={styles.drugCostMinimal}>Minimal narxi: 24 000 so'm</Text>\r\n+          <Text style={styles.moljal}>\r\n+            Olmazor t-n, Sebzor k.4A Mo'ljal: \"Sebzor\" dokoni; \"Sebzor massivi\"\r\n+            bekatidan 50m\r\n+          </Text>\r\n+          <Text style={styles.TelPhone}>(94) 123 93 90</Text>\r\n+          <Text style={styles.shikoyat}>shikoyat qilish</Text>\r\n+          <View style={styles.CardaTouch}>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Qongiroq</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Ulashish</Text>\r\n+            </TouchableOpacity>\r\n+            <TouchableOpacity style={styles.Buttons}>\r\n+              <Text style={styles.ButtonText}>Xaritada</Text>\r\n+            </TouchableOpacity>\r\n+          </View>\r\n+          <View style={styles.bottomCard}>\r\n+            <Text style={styles.bottomCardText}>Rengalin Tabletka №20</Text>\r\n+            <Text style={styles.bottomCardText2}>24 000 so'm (x1)</Text>\r\n+          </View>\r\n+        </View>\r\n       </ScrollView>\r\n     </View>\r\n   );\r\n };\r\n"
+                }
+            ],
+            "date": 1624524699726,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n\r\nconst CheaperPage = () => {\r\n  return (\r\n    <View>\r\n      <Text>This is Cheaper Page</Text>\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default CheaperPage;\r\n"
+        }
+    ]
+}

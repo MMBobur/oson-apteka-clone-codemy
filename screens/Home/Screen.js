@@ -1,12 +1,13 @@
 import React from "react";
-import SearchScreen from "../components/Search/Search";
-import CardItems from "../components/Home/CardItems";
-import Region from "../components/Region/Region";
-import HomePage from "../components/Home/Home";
-import BarCode_Scanner from "../components/Home/BarCode";
-import ChosenProducts from "../components/Pages/ChosenProducts";
-import Tavsif from "../components/Tavsif/Tavsif";
-import DrugInfo from "../components/DoriHaqida/DrugInfo";
+import SearchScreen from "../../components/Search/Search";
+import CardItems from "../../components/Home/CardItems";
+import Region from "../../components/Region/Region";
+import HomePage from "../../components/Home/Home";
+import BarCode_Scanner from "../../components/Home/BarCode";
+import ChosenProducts from "../../components/Pages/ChosenProducts";
+import Tavsif from "../../components/Tavsif/Tavsif";
+import DrugInfo from "../../components/DoriHaqida/DrugInfo";
+import TabPage from "../../components/Tab/TabPage";
 import { View, SafeAreaView, TouchableHighlight, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Entypo } from "@expo/vector-icons";
@@ -93,10 +94,25 @@ function TavsifPage({ navigation }) {
   );
 }
 
+function TabScreen({ navigation }) {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fff",
+      }}
+    >
+      <TabPage navigation={navigation} />
+    </View>
+  );
+}
+
 function HeaderLeftIcon() {
   const navigation = useNavigation();
   const navigateToHome = () => {
-    navigation.navigate("HomeScreen");
+    navigation.goBack();
   };
   return (
     <Entypo
