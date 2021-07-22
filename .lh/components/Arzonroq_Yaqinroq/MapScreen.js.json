@@ -1,0 +1,30 @@
+{
+    "sourceFile": "components/MapScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1624524406884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624524434817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const MapScreen = () => {\r\n   return (\r\n     <View>\r\n-      <Text>This is Settings Screen</Text>\r\n+      <Text>This is Map Screen</Text>\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624524550266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View } from \"react-native\";\r\n \r\n const MapScreen = () => {\r\n   return (\r\n-    <View>\r\n+    <View style={{ flex: 1, justifyContent: \"center\" }}>\r\n       <Text>This is Map Screen</Text>\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624524567600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View } from \"react-native\";\r\n \r\n const MapScreen = () => {\r\n   return (\r\n-    <View style={{ flex: 1, justifyContent: \"center\" }}>\r\n+    <View style={{ flex: 1, justifyContent: \"center\", alignItems: \"center\" }}>\r\n       <Text>This is Map Screen</Text>\r\n     </View>\r\n   );\r\n };\r\n"
+                }
+            ],
+            "date": 1624524406884,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { StyleSheet, Text, View } from \"react-native\";\r\n\r\nconst MapScreen = () => {\r\n  return (\r\n    <View>\r\n      <Text>This is Settings Screen</Text>\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default MapScreen;\r\n"
+        }
+    ]
+}

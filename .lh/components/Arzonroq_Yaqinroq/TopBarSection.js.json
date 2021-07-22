@@ -1,0 +1,238 @@
+{
+    "sourceFile": "components/TopBarSection.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 55,
+            "patches": [
+                {
+                    "date": 1624470148140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624470193001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View } from \"react-native\";\r\n+import { AntDesign } from \"@expo/vector-icons\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n-      <Text>This is Home Screen</Text>\r\n+      <AntDesign name=\"left\" size={24} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624470306718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View } from \"react-native\";\r\n+import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n import { AntDesign } from \"@expo/vector-icons\";\r\n+// import { StatusBar } from \"expo-status-bar\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n+      <StatusBar />\r\n       <AntDesign name=\"left\" size={24} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624470333450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n-      <StatusBar />\r\n+      <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n       <AntDesign name=\"left\" size={24} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624470479343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import React from \"react\";\r\n+import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n+import { AntDesign } from \"@expo/vector-icons\";\r\n+// import { StatusBar } from \"expo-status-bar\";\r\n+\r\n+const TopBarSection = () => {\r\n+  return (\r\n+    <View>\r\n+      <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n+      <Entypo name=\"chevron-left\" size={24} color=\"black\" />\r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default TopBarSection;\r\n"
+                },
+                {
+                    "date": 1624470494651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n-import { AntDesign } from \"@expo/vector-icons\";\r\n+import { Entypo } from \"@expo/vector-icons\";\r\n // import { StatusBar } from \"expo-status-bar\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n@@ -12,19 +12,4 @@\n   );\r\n };\r\n \r\n export default TopBarSection;\r\n-import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n-import { AntDesign } from \"@expo/vector-icons\";\r\n-// import { StatusBar } from \"expo-status-bar\";\r\n-\r\n-const TopBarSection = () => {\r\n-  return (\r\n-    <View>\r\n-      <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <AntDesign name=\"left\" size={24} color=\"black\" />\r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default TopBarSection;\r\n"
+                },
+                {
+                    "date": 1624470502144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Entypo name=\"chevron-left\" size={24} color=\"black\" />\r\n+      <Entypo name=\"chevron-left\" size={28} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624470541063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Entypo name=\"chevron-left\" size={28} color=\"black\" />\r\n+      <Entypo name=\"chevron-left\" size={28} color=\"gray\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624470575398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n-import { Entypo } from \"@expo/vector-icons\";\r\n+import { Feather } from \"@expo/vector-icons\";\r\n // import { StatusBar } from \"expo-status-bar\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Entypo name=\"chevron-left\" size={28} color=\"gray\" />\r\n+      <Feather name=\"chevron-left\" size={24} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624470581806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Feather name=\"chevron-left\" size={24} color=\"black\" />\r\n+      <Feather name=\"chevron-left\" size={26} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624470591281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Feather name=\"chevron-left\" size={26} color=\"black\" />\r\n+      <Feather name=\"chevron-left\" size={27} color=\"black\" />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624471157584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n-// import { StatusBar } from \"expo-status-bar\";\r\n+import TopPucture from \"../assets/TopPucture.jpg\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1624471193399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar } from \"react-native\";\r\n+import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n import TopPucture from \"../assets/TopPucture.jpg\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n       <Feather name=\"chevron-left\" size={27} color=\"black\" />\r\n+      <Image source={TopPucture} />\r\n     </View>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624471387305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n-import TopPucture from \"../assets/TopPucture.jpg\";\r\n+import TopPucture from \"../assets/PictureTop.png\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1624471460510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,24 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n+import { StyleSheet, Text, View, StatusBar, Image, StyleSheet } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n import TopPucture from \"../assets/PictureTop.png\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n       <Feather name=\"chevron-left\" size={27} color=\"black\" />\r\n-      <Image source={TopPucture} />\r\n+      <Image style={} source={TopPucture} />\r\n     </View>\r\n   );\r\n };\r\n \r\n export default TopBarSection;\r\n+\r\n+\r\n+const styles = StyleSheet.create({\r\n+    TopPicure: {\r\n+        width: 70,\r\n+        height: 20\r\n+    }\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1624471467842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,30 @@\n import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar, Image, StyleSheet } from \"react-native\";\r\n+import {\r\n+  StyleSheet,\r\n+  Text,\r\n+  View,\r\n+  StatusBar,\r\n+  Image,\r\n+  StyleSheet,\r\n+} from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n import TopPucture from \"../assets/PictureTop.png\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n       <Feather name=\"chevron-left\" size={27} color=\"black\" />\r\n-      <Image style={} source={TopPucture} />\r\n+      <Image style={styles.TopPicure} source={TopPucture} />\r\n     </View>\r\n   );\r\n };\r\n \r\n\\ No newline at end of file\n export default TopBarSection;\r\n \r\n-\r\n const styles = StyleSheet.create({\r\n-    TopPicure: {\r\n-        width: 70,\r\n-        height: 20\r\n-    }\r\n-})\n+  TopPicure: {\r\n+    width: 70,\r\n+    height: 20,\r\n+  },\r\n+});\r\n"
+                },
+                {
+                    "date": 1624471476338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,6 @@\n import React from \"react\";\r\n-import {\r\n-  StyleSheet,\r\n-  Text,\r\n-  View,\r\n-  StatusBar,\r\n-  Image,\r\n-  StyleSheet,\r\n-} from \"react-native\";\r\n+import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n import TopPucture from \"../assets/PictureTop.png\";\r\n \r\n const TopBarSection = () => {\r\n@@ -26,5 +19,5 @@\n   TopPicure: {\r\n     width: 70,\r\n     height: 20,\r\n   },\r\n-});\n\\ No newline at end of file\n+});\r\n"
+                },
+                {
+                    "date": 1624471485795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n-    width: 70,\r\n+    width: 100,\r\n     height: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471496169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n-    width: 100,\r\n+    width: 250,\r\n     height: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471502255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n-    width: 250,\r\n+    width: 200,\r\n     height: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471508490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,7 @@\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n     width: 200,\r\n-    height: 20,\r\n+    height: 50,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471518698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n-    width: 200,\r\n-    height: 50,\r\n+    width: 250,\r\n+    height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471562988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   TopPicure: {\r\n+    position: \"absolute\",\r\n     width: 250,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471619894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,19 +6,26 @@\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n       <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Feather name=\"chevron-left\" size={27} color=\"black\" />\r\n+      <Feather\r\n+        style={styles.IconLeft}\r\n+        name=\"chevron-left\"\r\n+        size={27}\r\n+        color=\"black\"\r\n+      />\r\n       <Image style={styles.TopPicure} source={TopPucture} />\r\n     </View>\r\n   );\r\n };\r\n \r\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n+  IconLeft: {\r\n+    position: \"absolute\",\r\n+  },\r\n   TopPicure: {\r\n-    position: \"absolute\",\r\n     width: 250,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471642251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n   IconLeft: {\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n+    display: \"flex\",\r\n     width: 250,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471656332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n+    alignSelf: \"center\",\r\n     width: 250,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624471676356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   IconLeft: {\r\n+    marginTop: 5,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n"
+                },
+                {
+                    "date": 1624471693407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n \r\n const styles = StyleSheet.create({\r\n   IconLeft: {\r\n     marginTop: 5,\r\n+    marginLeft: 5,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n"
+                },
+                {
+                    "date": 1624472356249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 250,\r\n+    width: 220,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624472365484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 220,\r\n-    height: 40,\r\n+    width: 200,\r\n+    height: 20,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624472396405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 200,\r\n-    height: 20,\r\n+    width: 100,\r\n+    height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624472402405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 100,\r\n+    width: 150,\r\n     height: 40,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624472415964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,35 @@\n+import React from \"react\";\r\n+import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n+import { Feather } from \"@expo/vector-icons\";\r\n+import TopPucture from \"../assets/PictureTop.png\";\r\n+\r\n+const TopBarSection = () => {\r\n+  return (\r\n+    <View>\r\n+      <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n+      <Feather\r\n+        style={styles.IconLeft}\r\n+        name=\"chevron-left\"\r\n+        size={27}\r\n+        color=\"black\"\r\n+      />\r\n+      <Image style={styles.TopPicure} source={TopPucture} />\r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default TopBarSection;\r\n+\r\n+const styles = StyleSheet.create({\r\n+  IconLeft: {\r\n+    marginTop: 5,\r\n+    marginLeft: 5,\r\n+    position: \"absolute\",\r\n+  },\r\n+  TopPicure: {\r\n+    display: \"flex\",\r\n+    alignSelf: \"center\",\r\n+    width: 150,\r\n+    height: 35,\r\n+  },\r\n+});\r\n"
+                },
+                {
+                    "date": 1624472423000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,39 +32,4 @@\n     width: 150,\r\n     height: 35,\r\n   },\r\n });\r\n-import React from \"react\";\r\n-import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n-import { Feather } from \"@expo/vector-icons\";\r\n-import TopPucture from \"../assets/PictureTop.png\";\r\n-\r\n-const TopBarSection = () => {\r\n-  return (\r\n-    <View>\r\n-      <StatusBar barStyle=\"dark-content\" backgroundColor=\"white\" />\r\n-      <Feather\r\n-        style={styles.IconLeft}\r\n-        name=\"chevron-left\"\r\n-        size={27}\r\n-        color=\"black\"\r\n-      />\r\n-      <Image style={styles.TopPicure} source={TopPucture} />\r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default TopBarSection;\r\n-\r\n-const styles = StyleSheet.create({\r\n-  IconLeft: {\r\n-    marginTop: 5,\r\n-    marginLeft: 5,\r\n-    position: \"absolute\",\r\n-  },\r\n-  TopPicure: {\r\n-    display: \"flex\",\r\n-    alignSelf: \"center\",\r\n-    width: 150,\r\n-    height: 40,\r\n-  },\r\n-});\r\n"
+                },
+                {
+                    "date": 1624472646192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 150,\r\n+    width: 350,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624472656078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 350,\r\n+    width: 240,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624512883249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n-import TopPucture from \"../assets/PictureTop.png\";\r\n+import TopPucture from \"../assets/aaaaaaa.png\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 240,\r\n+    width: 230,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624512917884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 230,\r\n+    width: 200,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624512928883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 200,\r\n+    width: 180,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513460668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View, StatusBar, Image } from \"react-native\";\r\n import { Feather } from \"@expo/vector-icons\";\r\n-import TopPucture from \"../assets/aaaaaaa.png\";\r\n+import TopPucture from \"../assets/photo_apteka.jpg\";\r\n \r\n const TopBarSection = () => {\r\n   return (\r\n     <View>\r\n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 180,\r\n+    width: 190,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513478494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 190,\r\n+    width: 192,\r\n     height: 35,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513493452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,8 @@\n   },\r\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 192,\r\n-    height: 35,\r\n+    width: 195,\r\n+    height: 45,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513505058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 195,\r\n-    height: 45,\r\n+    height: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513511484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 195,\r\n-    height: 30,\r\n+    height: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513520722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n   TopPicure: {\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 195,\r\n-    height: 25,\r\n+    height: 30,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513532683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n     marginLeft: 5,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n+    top: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 195,\r\n     height: 30,\r\n"
+                },
+                {
+                    "date": 1624513549339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     marginLeft: 5,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n-    top: 10,\r\n+    marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 195,\r\n     height: 30,\r\n"
+                },
+                {
+                    "date": 1624513573859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n   TopPicure: {\r\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 195,\r\n-    height: 30,\r\n+    width: 190,\r\n+    height: 27,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513580036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,7 @@\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 190,\r\n-    height: 27,\r\n+    height: 24,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513585534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,7 @@\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 190,\r\n-    height: 24,\r\n+    height: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513590774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n   TopPicure: {\r\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 190,\r\n+    width: 185,\r\n     height: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513596556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n   TopPicure: {\r\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n-    width: 185,\r\n+    width: 180,\r\n     height: 25,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513603954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,7 @@\n     marginTop: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 180,\r\n-    height: 25,\r\n+    height: 27,\r\n   },\r\n });\r\n"
+                },
+                {
+                    "date": 1624513612802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   IconLeft: {\r\n-    marginTop: 5,\r\n+    marginTop: 8,\r\n     marginLeft: 5,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n"
+                },
+                {
+                    "date": 1624513623245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n export default TopBarSection;\r\n \r\n const styles = StyleSheet.create({\r\n   IconLeft: {\r\n-    marginTop: 8,\r\n-    marginLeft: 5,\r\n+    marginTop: 10,\r\n+    marginLeft: 7,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n     marginTop: 10,\r\n"
+                },
+                {
+                    "date": 1624513656887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,13 +22,14 @@\n \r\n const styles = StyleSheet.create({\r\n   IconLeft: {\r\n     marginTop: 10,\r\n-    marginLeft: 7,\r\n+    marginLeft: 8,\r\n     position: \"absolute\",\r\n   },\r\n   TopPicure: {\r\n     marginTop: 10,\r\n+    marginBottom: 10,\r\n     display: \"flex\",\r\n     alignSelf: \"center\",\r\n     width: 180,\r\n     height: 27,\r\n"
+                }
+            ],
+            "date": 1624470148140,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { StyleSheet, Text, View } from \"react-native\";\r\n\r\nconst TopBarSection = () => {\r\n  return (\r\n    <View>\r\n      <Text>This is Home Screen</Text>\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default TopBarSection;\r\n"
+        }
+    ]
+}

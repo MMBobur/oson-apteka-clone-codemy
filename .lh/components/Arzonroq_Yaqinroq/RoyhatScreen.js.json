@@ -1,0 +1,306 @@
+{
+    "sourceFile": "components/RoyhatScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 72,
+            "patches": [
+                {
+                    "date": 1624524416249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1624524427574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const RoyhatScreen = () => {\r\n   return (\r\n     <View>\r\n-      <Text>This is Home Screen</Text>\r\n+      <Text>This is Royhat Screen</Text>\r\n       <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n     </View>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624524968324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,24 @@\n import React from \"react\";\r\n import { StyleSheet, Text, View } from \"react-native\";\r\n+import { createMaterialTopTabNavigator } from \"@react-navigation/material-top-tabs\";\r\n import { AntDesign } from \"@expo/vector-icons\";\r\n \r\n+import CheaperPage from \"./InnerPages/CheaperPage\";\r\n+import NearestPage from \"./InnerPages/NearestPage\";\r\n+\r\n+const RoyhatTab = createMaterialTopTabNavigator();\r\n+\r\n const RoyhatScreen = () => {\r\n   return (\r\n-    <View>\r\n-      <Text>This is Royhat Screen</Text>\r\n-      <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n-    </View>\r\n+    // <View>\r\n+    //   <Text>This is Royhat Screen</Text>\r\n+    //   <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n+    // </View>\r\n+    <RoyhatTab.Navigator>\r\n+      <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n+      <RoyhatTab.Screen name=\"Yaqinroq\" component={NearestPage} />\r\n+    </RoyhatTab.Navigator>\r\n   );\r\n };\r\n \r\n export default RoyhatScreen;\r\n"
+                },
+                {
+                    "date": 1624525156348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,15 @@\n     // <View>\r\n     //   <Text>This is Royhat Screen</Text>\r\n     //   <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n     // </View>\r\n-    <RoyhatTab.Navigator>\r\n+    <RoyhatTab.Navigator\r\n+      tabBarOptions={{\r\n+        style: {\r\n+          marginTop: 20,\r\n+        },\r\n+      }}\r\n+    >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n       <RoyhatTab.Screen name=\"Yaqinroq\" component={NearestPage} />\r\n     </RoyhatTab.Navigator>\r\n   );\r\n"
+                },
+                {
+                    "date": 1624525252887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     // </View>\r\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n-          marginTop: 20,\r\n+          marginTop: 15,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525263527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     // </View>\r\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n-          marginTop: 15,\r\n+          marginTop: 13,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525283244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           marginTop: 13,\r\n+          elevation: 1,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525332866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     // </View>\r\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n+          backgroundColor: \"#E3E3E3\",\r\n           marginTop: 13,\r\n           elevation: 1,\r\n         },\r\n       }}\r\n"
+                },
+                {
+                    "date": 1624525364869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     // </View>\r\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n-          backgroundColor: \"#E3E3E3\",\r\n+          backgroundColor: \"#E5E9EC\",\r\n           marginTop: 13,\r\n           elevation: 1,\r\n         },\r\n       }}\r\n"
+                },
+                {
+                    "date": 1624525387182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           marginTop: 13,\r\n-          elevation: 1,\r\n+          elevation: 0,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525498215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n           backgroundColor: \"#E5E9EC\",\r\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n+        indicatorStyle: {\r\n+          height: 50,\r\n+        },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n       <RoyhatTab.Screen name=\"Yaqinroq\" component={NearestPage} />\r\n"
+                },
+                {
+                    "date": 1624525504518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n         indicatorStyle: {\r\n-          height: 50,\r\n+          height: 40,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525534633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n         indicatorStyle: {\r\n+          backgroundColor: \"white\",\r\n           height: 40,\r\n         },\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1624525551550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 40,\r\n+          paddingBottom: 5,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525558808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 40,\r\n-          paddingBottom: 5,\r\n+          marginBottom: 5,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525599836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n           backgroundColor: \"#E5E9EC\",\r\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n+        indicatorContainerStyle: {\r\n+          borderRadius: 50,\r\n+        },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 40,\r\n           marginBottom: 5,\r\n"
+                },
+                {
+                    "date": 1624525611938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n           borderRadius: 50,\r\n+          borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 40,\r\n"
+                },
+                {
+                    "date": 1624525618966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n           borderRadius: 50,\r\n+          borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n"
+                },
+                {
+                    "date": 1624525728023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n+          borderRadius: 50,\r\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n"
+                },
+                {
+                    "date": 1624525735627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           marginTop: 13,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n-          borderRadius: 50,\r\n+          // borderRadius: 50,\r\n           borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n"
+                },
+                {
+                    "date": 1624525751582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,14 +18,14 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           borderRadius: 50,\r\n-          marginTop: 13,\r\n+          marginTop: 11,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n           // borderRadius: 50,\r\n-          borderWidth: 2,\r\n+          // borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n"
+                },
+                {
+                    "date": 1624525771273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,11 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n+          height: 100,\r\n           borderRadius: 50,\r\n-          marginTop: 11,\r\n+          marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n           // borderRadius: 50,\r\n"
+                },
+                {
+                    "date": 1624525779085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n-          height: 100,\r\n+          height: 50,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525789354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n-          height: 50,\r\n+          height: 40,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525865510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 40,\r\n+          marginRight: 2,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525871800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 40,\r\n-          marginRight: 2,\r\n+          marginRight: 5,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525888632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 40,\r\n-          marginRight: 5,\r\n+          marginRight: 7,\r\n+          marginLeft: 10,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525914136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 40,\r\n-          marginRight: 7,\r\n-          marginLeft: 10,\r\n+          marginRight: 8,\r\n+          marginLeft: 8,\r\n           borderRadius: 50,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n"
+                },
+                {
+                    "date": 1624525923678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n-          height: 40,\r\n+          height: 30,\r\n           marginBottom: 5,\r\n         },\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1624525938387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 30,\r\n           marginBottom: 5,\r\n+          borderRadius: 50,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525963813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n-          height: 30,\r\n+          height: 35,\r\n           marginBottom: 5,\r\n           borderRadius: 50,\r\n         },\r\n       }}\r\n"
+                },
+                {
+                    "date": 1624525975954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n-          borderRadius: 50,\r\n+          borderRadius: 55,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525986295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n-          borderRadius: 55,\r\n+          borderRadius: 20,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624525993958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n-          borderRadius: 20,\r\n+          borderRadius: 10,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526005580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n           backgroundColor: \"#E5E9EC\",\r\n           height: 40,\r\n           marginRight: 8,\r\n           marginLeft: 8,\r\n-          borderRadius: 50,\r\n+          borderRadius: 10,\r\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n"
+                },
+                {
+                    "date": 1624526053627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n-          height: 40,\r\n+          height: 45,\r\n           marginRight: 8,\r\n           marginLeft: 8,\r\n           borderRadius: 10,\r\n           marginTop: 10,\r\n"
+                },
+                {
+                    "date": 1624526099890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n           // borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n+          marginRight: 5,\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n           borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1624526107256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           // borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n-          marginRight: 5,\r\n+          marginRight: 10,\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n           borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1624526127144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n           // borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n-          marginRight: 10,\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n           borderRadius: 10,\r\n+          marginLeft: 5,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526136994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n           backgroundColor: \"white\",\r\n           height: 35,\r\n           marginBottom: 5,\r\n           borderRadius: 10,\r\n-          marginLeft: 5,\r\n+          marginLeft: 3,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526157195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n-          height: 45,\r\n+          height: 43,\r\n           marginRight: 8,\r\n           marginLeft: 8,\r\n           borderRadius: 10,\r\n           marginTop: 10,\r\n"
+                },
+                {
+                    "date": 1624526166481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n-          height: 43,\r\n+          height: 42,\r\n           marginRight: 8,\r\n           marginLeft: 8,\r\n           borderRadius: 10,\r\n           marginTop: 10,\r\n"
+                },
+                {
+                    "date": 1624526178739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          marginBottom: 5,\r\n+          marginBottom: 4,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n         },\r\n       }}\r\n"
+                },
+                {
+                    "date": 1624526186222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          marginBottom: 4,\r\n+          marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n         },\r\n       }}\r\n"
+                },
+                {
+                    "date": 1624526205646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n           height: 35,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n+          marginStart: 3,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526221789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n           height: 35,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n-          marginStart: 3,\r\n+          marginRight: 3,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526227575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n           height: 35,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n-          marginRight: 3,\r\n+          marginRight: 5,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526261459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n+          width: 50,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n           marginRight: 5,\r\n"
+                },
+                {
+                    "date": 1624526267654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          width: 50,\r\n+          width: 180,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n           marginRight: 5,\r\n"
+                },
+                {
+                    "date": 1624526273704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          width: 180,\r\n+          width: 160,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n           marginRight: 5,\r\n"
+                },
+                {
+                    "date": 1624526279656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          width: 160,\r\n+          width: 170,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n           marginRight: 5,\r\n"
+                },
+                {
+                    "date": 1624526296996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,13 +32,13 @@\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n           height: 35,\r\n-          width: 170,\r\n+          width: 165,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n           marginLeft: 3,\r\n-          marginRight: 5,\r\n+          // marginRight: 5,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526305934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,9 @@\n           height: 35,\r\n           width: 165,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n-          marginLeft: 3,\r\n-          // marginRight: 5,\r\n+          // marginLeft: 3,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526313557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n           height: 35,\r\n           width: 165,\r\n           marginBottom: 3.5,\r\n           borderRadius: 10,\r\n-          // marginLeft: 3,\r\n+          marginLeft: 3,\r\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n"
+                },
+                {
+                    "date": 1624526355219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n           marginLeft: 3,\r\n         },\r\n       }}\r\n     >\r\n-      <RoyhatTab.Screen name=\"Arzonroq\" component={CheaperPage} />\r\n+      <RoyhatTab.Screen name=\"Aрзонроқ\" component={CheaperPage} />\r\n       <RoyhatTab.Screen name=\"Yaqinroq\" component={NearestPage} />\r\n     </RoyhatTab.Navigator>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1624526376615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n         },\r\n       }}\r\n     >\r\n       <RoyhatTab.Screen name=\"Aрзонроқ\" component={CheaperPage} />\r\n-      <RoyhatTab.Screen name=\"Yaqinroq\" component={NearestPage} />\r\n+      <RoyhatTab.Screen name=\"Яқинроқ\" component={NearestPage} />\r\n     </RoyhatTab.Navigator>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1624526451156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,8 @@\n           marginTop: 10,\r\n           elevation: 0,\r\n         },\r\n         indicatorContainerStyle: {\r\n-          // borderRadius: 50,\r\n-          // borderWidth: 2,\r\n           borderColor: \"red\",\r\n         },\r\n         indicatorStyle: {\r\n           backgroundColor: \"white\",\r\n"
+                },
+                {
+                    "date": 1624526472109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n     //   <Text>This is Royhat Screen</Text>\r\n     //   <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n     // </View>\r\n     <RoyhatTab.Navigator\r\n+     activeTintColor: \"black\",\r\n+          inactiveTintColor: \"#90AAB7\",\r\n       tabBarOptions={{\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526485067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n     //   <Text>This is Royhat Screen</Text>\r\n     //   <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n     // </View>\r\n     <RoyhatTab.Navigator\r\n-     activeTintColor: \"black\",\r\n-          inactiveTintColor: \"#90AAB7\",\r\n       tabBarOptions={{\r\n+        activeTintColor: \"black\",\r\n+        inactiveTintColor: \"#90AAB7\",\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n           marginRight: 8,\r\n"
+                },
+                {
+                    "date": 1624526505726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,11 @@\n     <RoyhatTab.Navigator\r\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n+        labelStyle: {\r\n+          paddingBottom: 5,\r\n+        },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n           marginRight: 8,\r\n"
+                },
+                {
+                    "date": 1624526511398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 5,\r\n+          paddingBottom: 10,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526518672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 10,\r\n+          paddingBottom: 1,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526525975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 1,\r\n+          paddingBottom: 8,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526535723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 8,\r\n+          // paddingBottom: 8,\r\n+          marginBottom: 10,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526548209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n           // paddingBottom: 8,\r\n-          marginBottom: 10,\r\n+          marginBottom: 20,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526566044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n           // paddingBottom: 8,\r\n-          marginBottom: 20,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526576382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          // paddingBottom: 8,\r\n+          paddingBottom: 1,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526583418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 1,\r\n+          paddingBottom: 8,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526608058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 8,\r\n+          paddingBottom: 55,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526615643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          paddingBottom: 55,\r\n+          paddingBottom: 5,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526683199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n+          marginTop: 5,\r\n           paddingBottom: 5,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n"
+                },
+                {
+                    "date": 1624526691264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          marginTop: 5,\r\n-          paddingBottom: 5,\r\n+          marginTop: -5,\r\n+          // paddingBottom: 5,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n           height: 42,\r\n"
+                },
+                {
+                    "date": 1624526699381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       tabBarOptions={{\r\n         activeTintColor: \"black\",\r\n         inactiveTintColor: \"#90AAB7\",\r\n         labelStyle: {\r\n-          marginTop: -5,\r\n+          marginTop: -4,\r\n           // paddingBottom: 5,\r\n         },\r\n         style: {\r\n           backgroundColor: \"#E5E9EC\",\r\n"
+                }
+            ],
+            "date": 1624524416249,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { StyleSheet, Text, View } from \"react-native\";\r\nimport { AntDesign } from \"@expo/vector-icons\";\r\n\r\nconst RoyhatScreen = () => {\r\n  return (\r\n    <View>\r\n      <Text>This is Home Screen</Text>\r\n      <AntDesign name=\"stepforward\" size={50} color=\"red\" />\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default RoyhatScreen;\r\n"
+        }
+    ]
+}

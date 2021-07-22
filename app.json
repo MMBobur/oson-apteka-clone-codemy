@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/oson1.png",
+      "image": "./assets/apteka.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

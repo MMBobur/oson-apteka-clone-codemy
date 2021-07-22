@@ -7,10 +7,10 @@ import {
   TOGGLE_AMOUNT,
   ADD_TO_CART,
 } from "../Actions/actions";
-import cartItems from "./cart-items";
+// import cartItems from "./cart-items";
 
 const initialStore = {
-  cart: cartItems,
+  cart: [],
   total: 0,
   amount: 0,
 };
@@ -20,20 +20,18 @@ function reducer(state = initialStore, action) {
   switch (action.type) {
     case ADD_TO_CART:
       let addCart = {
-        meal_id: action.payload.id,
-        title: action.payload.title,
+        id: action.payload.id,
+        full_name: action.payload.full_name,
         price: action.payload.price,
-        img: action.payload.img,
+        image_thumbnail: action.payload.image_thumbnail,
+        // manufacturer: { name: name },
+        amount: 1,
       };
       return {
         ...state,
         cart: [addCart, ...state.cart],
         total: state.total + action.payload.price,
       };
-    // case ADD_TO_CART:
-    //   return { ...state, cart: [...state.cart, action.payload.item] };
-    // default:
-    //   return state;
   }
   // clear cart
   if (action.type === CLEAR_CART) {

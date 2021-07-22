@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Linking, StyleSheet } from "react-native";
+import { Linking, StyleSheet, Text } from "react-native";
 import {
   createDrawerNavigator,
   DrawerItemList,
@@ -7,7 +7,8 @@ import {
 } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { HomeScreen } from "./screens";
+import { HomeScreen } from "./screens/Home";
+import { TabIndex } from "./screens/Tab/TabIndex";
 import { NavigationContainer } from "@react-navigation/native";
 import {
   Entypo,
@@ -16,18 +17,21 @@ import {
   SimpleLineIcons,
   Feather,
   MaterialIcons,
+  FontAwesome,
 } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 // redux stuff
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+
 import reducer from "./components/Reducer/reducer";
 
 import AboutScreen from "./components/Pages/AboutScreen";
 import LanguageScreen from "./components/Pages/LanguageScreen";
 import PromoActsiyaScreen from "./components/Pages/PromoActsiya";
 import HistoryOfSearchScreen from "./components/Pages/HistoryOfSearchScreen";
-import { Text } from "react-native";
+import TabPage from "./components/Tab/TabPage";
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -199,6 +203,9 @@ const store = createStore(
 
 function App() {
   return (
+    // <>
+    //   <TabPage />
+    // </>
     <Provider store={store}>
       <NavigationContainer>
         <Drawer.Navigator
@@ -221,6 +228,7 @@ function App() {
         >
           <Drawer.Screen
             options={{
+              swipeEnabled: false,
               drawerIcon: () => (
                 <AntDesign
                   style={styles.iconDrawer}
@@ -231,7 +239,7 @@ function App() {
               ),
             }}
             component={HomeScreen}
-            name="HomeScreen"
+            name="Бош сахифа"
           />
           <Drawer.Screen
             options={{
